@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="логотип компании Cat Energy">
+        </a>
+        <a class="page-header__middle-logo">
+          <img src="img/logo/logo-middle-mobile.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__checkbox" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="selection">
+        <h1 class="selection__title">Подбор программы</h1>
+        <p class="selection__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="selection__form" method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset class="cat-info-area">
+            <legend class="visually-hidden">Данные кота</legend>
+            <ul class="cat-info-list">
+              <li class="cat-info-list__name">
+                <label for="name">Имя:*</label>
+                <input type="text" id="name" name="name" placeholder="Барсик">
+              </li>
+              <li class="cat-info-list__weight">
+                <label for="weight">Вес (кг):*</label>
+                <input type="number" id="weight" name="weight" placeholder="7">
+              </li>
+              <li class="cat-info-list__age">
+                <label for="age">Возраст (лет):</label>
+                <input type="number" id="age" name="age" placeholder="7">
+              </li>
+            </ul>
+            <ul class="cat-program-list">
+              <li class="cat-program-list__lose-weight">
+                <input type="radio" id="lose-weight" name="cat-program" value="lose-weight">
+                <label for="lose-weight">Похудение</label>
+              </li>
+              <li class="cat-program-list__gain-weight">
+                <input type="radio" id="gain-weight" name="cat-program" value="gain-weight">
+                <label for="gain-weight">Набор массы</label>
+              </li>
+              <li class="cat-program-list__need-suggestion">
+                <input type="radio" id="suggestion" name="cat-program" value="need-suggestion">
+                <label for="suggestion">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contacts-area">
+            <legend>Контактные данные (владельца кота)</legend>
+            <ul class="contacts-form-list">
+              <li class="contacts-form-list__email">
+                <label for="e-mail">E-mail:*</label>
+                <input type="email" id="e-mail" placeholder="kuklachev@gmail.com" name="e-mail">
+              </li>
+              <li class="contacts-form-list__telephone">
+                <label for="telephone">Телефон:*</label>
+                <input type="tel" id="telephone" placeholder="8 (960) 900-60-90" name="telephone">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="comments-area">
+            <legend>Комментарий</legend>
+            <textarea name="comment-textarea" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend class="details-area">Дополнительно</legend>
+              <ul class="details-list">
+                <li class="details-list__item">
+                  <input type="checkbox" id="sugar-checkbox">
+                  <label for="sugar-checkbox">Сахарозаменитель</label>
+                </li>
+                <li class="details-list__item">
+                  <input type="checkbox" id="water-checkbox">
+                  <label for="water-checkbox">Питьевая вода</label>
+                </li>
+                <li class="details-list__item">
+                  <input type="checkbox" id="milk-checkbox">
+                  <label for="milk-checkbox">Молоко</label>
+                </li>
+                <li class="details-list__item">
+                  <input type="checkbox" id="vitamin-checkbox">
+                  <label for="vitamin-checkbox">Витамины</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button class="button button--submit" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+          <p class="note-paragraph">* &mdash; Обязательные поля</p>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="partnership">
+        <div class="partnership__item partnership__wrapper">
+          <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <address class="partnership__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="partnership__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1538063769553!2d30.321156441696658!3d59.93916255017416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1616772151673!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" title="офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+        </div>
+      </section>
+      <section class="bottom-footer">
+        <div class="bottom-footer__wrapper">
+          <a class="bottom-footer__logo" href="#">
+            <img src="img/logo/footer-logo.svg" width="128" height="24" alt="Логотип компании Cat Energy">
+          </a>
+          <div class="bottom-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-footer__copyright">
+            <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/logo/html-academy.svg" alt="Логотип компании HTML Academy">
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
