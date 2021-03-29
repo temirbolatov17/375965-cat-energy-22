@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/normalize.css">
 
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="логотип компании Cat Energy">
+        <a class="page-header__logo" aria-label="Логотип компании Cat Energy">
+          <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип компании Cat Energy">
         </a>
         <a class="page-header__middle-logo">
           <img src="img/logo/logo-middle-mobile.svg" width="101" height="18" alt="Cat Energy">
@@ -44,7 +44,7 @@
         </div>
       </section>
       <section class="suggestion-list">
-        <div class="suggestion__wrapper">
+        <div class="suggestion-list__wrapper">
           <h2 class="visually-hidden">Подбор программы</h2>
           <div class="suggestion-list__item suggestion-list__wrapper">
             <img class="suggestion-list__image" src="img/suggestion-logos/cat_lose_weight.svg" width="50" height="53" alt="">
@@ -75,18 +75,18 @@
         <div class="example__wrapper">
           <h2 class="title">Живой пример</h2>
           <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="stats__list">
-            <div class="stats__item">
-              <dt class="stats__number">5 кг</dt>
-              <dd class="stats__description">снижение веса</dd>
+          <dl class="stats-list">
+            <div class="stats-list__item">
+              <dt class="stats-list__number">5 кг</dt>
+              <dd class="stats-list__description">снижение веса</dd>
             </div>
-            <div class="stats__item">
-              <dt class="stats__number">60 дней</dt>
-              <dd class="stats__description">затрачено времени</dd>
+            <div class="stats-list__item">
+              <dt class="stats-list__number">60 дней</dt>
+              <dd class="stats-list__description">затрачено времени</dd>
             </div>
-            <div class="stats__item">
-              <dt class="stats__number">15 000 руб.</dt>
-              <dd class="stats__description">Затраты на питание</dd>
+            <div class="stats-list__item">
+              <dt class="stats-list__number">15 000 руб.</dt>
+              <dd class="stats-list__description">Затраты на питание</dd>
             </div>
           </dl>
           <div class="slider">
@@ -95,9 +95,14 @@
               <img class="example__image" src="img/example-images/after-mobile.png" alt="Фотография стройной кошки">
             </div>
             <div class="slider__control">
-              <span class="slider__title slider__title--active">Было</span>
-              <input class="slider__range" type="range">
-              <span class="slider__title">Стало</span>
+              <span class="slider__title slider__title--desktop">Было</span>
+              <div class="range-controls">
+                <div class="scale scale--desktop">
+                    <div class="scale__bar scale__bar--desktop"></div>
+                </div>
+                <div class="toggle toggle--desktop" aria-label="Ползунок примера изменений веса кота"></div>
+              </div>
+              <span class="slider__title slider__title--desktop">Стало</span>
             </div>
           </div>
         </div>
@@ -132,9 +137,9 @@
             </ul>
           </div>
           <div class="bottom-footer__copyright">
-            <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/logo/html-academy.svg" alt="Логотип компании HTML Academy">
+            <a class="copyright-title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип компании HTML Academy">
+              <img class="copyright-logo__img" src="img/logo/html-academy.svg" alt="Логотип компании HTML Academy">
             </a>
           </div>
         </div>
