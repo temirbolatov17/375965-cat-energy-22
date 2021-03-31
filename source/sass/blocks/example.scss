@@ -1,0 +1,25 @@
+.example {
+  background-color: $basic-grey;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__subtitle {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__total {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+

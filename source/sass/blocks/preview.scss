@@ -1,0 +1,17 @@
+.preview {
+  background-image: url(../../img/preview-images/cat-bg.png);
+  background-repeat: no-repeat;
+}
+
+.preview__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+}
+
+.preview__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-transform: uppercase;
+}

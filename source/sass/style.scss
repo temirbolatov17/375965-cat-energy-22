@@ -1,1 +1,45 @@
-// Начните писать стили здесь
+// Global
+
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+
+// Blocks
+// Page-body
+
+@import "blocks/page-body.scss";
+
+// Header
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+// Preview
+
+@import "blocks/preview.scss";
+
+
+// Suggestion list
+
+@import "blocks/suggestion-list.scss";
+@import "blocks/suggestion-card.scss";
+
+// Benefits
+
+@import "blocks/benefits.scss";
+@import "blocks/benefits-list.scss";
+
+//Example
+
+@import "blocks/example.scss";
+@import "blocks/stats-list.scss";
+@import "blocks/slider.scss";
+
+// Footer
+
+@import "blocks/page-footer.scss";
+@import "blocks/partnership.scss";
+@import "blocks/bottom-footer.scss";
+
+@import "blocks/copyright.scss";
