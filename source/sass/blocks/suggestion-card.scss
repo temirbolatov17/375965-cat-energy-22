@@ -3,21 +3,15 @@
 }
 
 .suggestion-card__title {
-  font-size: 24px;
-  line-height: 37px;
+  @include oswald(24px, 37px, 400);
   text-transform: uppercase;
 }
 
 .suggestion-card__subtitle {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  @include arial(14px, 18px, 400);
 }
 
 .suggestion-card__link {
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $black;
+  @include link-reset($black);
+  @include oswald-uppercase(16px, 16px, 400);
 }

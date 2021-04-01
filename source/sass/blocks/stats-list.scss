@@ -1,12 +1,8 @@
 .stats-list__number {
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
+  @include oswald-uppercase(24px, 24px, 400);
 }
 
 .stats-list__description {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
+  @include arial(12px, 12px, 400);
   text-transform: lowercase;
 }

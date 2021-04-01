@@ -2,24 +2,19 @@
   background-color: $basic-grey;
 }
 
-.example__wrapper {
-  padding: 0 20px;
-}
-
 .example__title {
-  font-size: 36px;
-  line-height: 40px;
+  @include oswald(36px, 40px, 400);
 }
 
 .example__subtitle {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  @include arial(14px, 18px, 400);
 }
 
 .example__total {
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  @include oswald-uppercase(14px, 20px, 400);
 }
 
+.example__list {
+  @include margin-reset;
+  @include padding-reset;
+}

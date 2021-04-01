@@ -1,15 +1,7 @@
-@import "../global/variables.scss";
-
 .site-list {
-  list-style: none;
-  text-transform: uppercase;
-
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
+  @include oswald-uppercase(20px, 20px, 500);
 }
 
 .site-list__link {
-  text-decoration: none;
-  color: $black;
+  @include link-reset($black);
 }

@@ -3,11 +3,13 @@
 @import "global/global.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
+@import "global/mixins.scss";
 
 // Blocks
 // Page-body
 
 @import "blocks/page-body.scss";
+@import "blocks/button.scss";
 
 // Header
 
@@ -41,5 +43,4 @@
 @import "blocks/page-footer.scss";
 @import "blocks/partnership.scss";
 @import "blocks/bottom-footer.scss";
-
 @import "blocks/copyright.scss";

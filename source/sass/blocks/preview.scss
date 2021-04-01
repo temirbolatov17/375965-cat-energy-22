@@ -1,17 +1,14 @@
 .preview {
-  background-image: url(../../img/preview-images/cat-bg.png);
+  background-image: url("../../img/preview-images/cat-bg.png");
   background-repeat: no-repeat;
 }
 
 .preview__title {
-  font-size: 36px;
-  line-height: 36px;
+  @include oswald(36px, 36px, 400);
   color: $white;
 }
 
 .preview__subtitle {
-  font-size: 14px;
-  line-height: 14px;
+  @include oswald-uppercase(14px, 14px, 400);
   color: $white;
-  text-transform: uppercase;
 }
