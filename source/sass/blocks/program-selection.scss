@@ -1,0 +1,9 @@
+/* Program selection */
+
+.program-selection__title {
+  @include oswald(36px, 36px, 400);
+}
+
+.program-selection__subtitle {
+  @include oswald-uppercase(14px, 18px, 400);
+}

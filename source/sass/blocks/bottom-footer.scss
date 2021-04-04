@@ -1,1 +1,11 @@
 /* Bottom footer */
+
+.bottom-footer__logo {
+  &:hover {
+    @include hover(0.8);
+  }
+
+  &:active {
+    @include active(0.6);
+  }
+}

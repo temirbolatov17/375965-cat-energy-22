@@ -14,4 +14,8 @@
 .suggestion-card__link {
   @include link-reset($black);
   @include oswald-uppercase(16px, 16px, 400);
+
+  &:active {
+    @include active(0.3);
+  }
 }

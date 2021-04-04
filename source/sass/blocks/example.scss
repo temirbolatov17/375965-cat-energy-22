@@ -1,3 +1,5 @@
+/* Example */
+
 .example {
   background-color: $basic-grey;
 }
@@ -15,6 +17,5 @@
 }
 
 .example__list {
-  @include margin-reset;
-  @include padding-reset;
+  @include list-reset;
 }

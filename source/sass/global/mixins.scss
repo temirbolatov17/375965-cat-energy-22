@@ -31,10 +31,10 @@
   text-decoration: none;
 }
 
-@mixin margin-reset {
-  margin: 0;
+@mixin active($opacity) {
+  opacity: $opacity;
 }
 
-@mixin padding-reset {
-  padding: 0;
+@mixin hover($opacity) {
+  opacity: $opacity;
 }
