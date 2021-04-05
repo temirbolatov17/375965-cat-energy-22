@@ -7,7 +7,7 @@
 
 // Blocks
 // Page-body
-
+@import "blocks/page-title.scss";
 @import "blocks/page-body.scss";
 @import "blocks/button.scss";
 
@@ -52,3 +52,11 @@
 @import "blocks/form.scss";
 @import "blocks/form-fieldset.scss";
 @import "blocks/form-list.scss";
+
+// Catalog
+
+@import "blocks/product-list.scss";
+@import "blocks/product.scss";
+@import "blocks/spec-list";
+@import "blocks/product-extra.scss";
+@import "blocks/promo.scss";

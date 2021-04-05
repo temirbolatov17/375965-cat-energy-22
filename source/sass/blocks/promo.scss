@@ -1,0 +1,13 @@
+/* Promo */
+
+.promo {
+  background-image: url("../../img/promo-img/gift-photo-mobile.png");
+  background-repeat: no-repeat;
+  height: 289px;
+  width: 280px;
+}
+
+.promo__title {
+  @include arial(16px, 20px, 400);
+  color: $white;
+}

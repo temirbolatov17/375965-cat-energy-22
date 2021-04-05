@@ -6,10 +6,10 @@
 
 .site-list__item {
   &:hover {
-    @include hover(0.6);
+    @include opacity-set(0.6);
   }
 
   &:active {
-    @include active(0.3);
+    @include opacity-set(0.3);
   }
 }

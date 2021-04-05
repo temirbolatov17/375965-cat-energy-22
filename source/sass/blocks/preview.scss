@@ -1,11 +1,8 @@
+/* Preview */
+
 .preview {
   background-image: url("../../img/preview-images/cat-bg.png");
   background-repeat: no-repeat;
-}
-
-.preview__title {
-  @include oswald(36px, 36px, 400);
-  color: $white;
 }
 
 .preview__subtitle {

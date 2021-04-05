@@ -1,0 +1,9 @@
+/* Page title */
+
+.page-title {
+  @include oswald(36px, 36px, 400);
+
+  &--index {
+    color: $white;
+  }
+}
