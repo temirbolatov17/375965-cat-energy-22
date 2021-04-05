@@ -1,0 +1,21 @@
+.suggestion-card {
+  background-color: $basic-grey;
+}
+
+.suggestion-card__title {
+  @include oswald(24px, 37px, 400);
+  text-transform: uppercase;
+}
+
+.suggestion-card__subtitle {
+  @include arial(14px, 18px, 400);
+}
+
+.suggestion-card__link {
+  @include link-reset($black);
+  @include oswald-uppercase(16px, 16px, 400);
+
+  &:active {
+    @include active(0.3);
+  }
+}

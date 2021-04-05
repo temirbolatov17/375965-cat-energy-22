@@ -1,0 +1,8 @@
+.stats-list__number {
+  @include oswald-uppercase(24px, 24px, 400);
+}
+
+.stats-list__description {
+  @include arial(12px, 12px, 400);
+  text-transform: lowercase;
+}

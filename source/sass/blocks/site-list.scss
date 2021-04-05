@@ -1,0 +1,7 @@
+.site-list {
+  @include oswald-uppercase(20px, 20px, 500);
+}
+
+.site-list__link {
+  @include link-reset($black);
+}

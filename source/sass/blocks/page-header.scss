@@ -1,0 +1,12 @@
+/* Page header */
+.page-header__logo {
+  text-decoration: none;
+
+  &:hover {
+    @include hover(0.6);
+  }
+
+  &:active {
+    @include active(0.3);
+  }
+}

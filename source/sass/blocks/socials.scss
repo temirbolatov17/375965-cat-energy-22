@@ -1,0 +1,25 @@
+/* Socials */
+
+.socials {
+  @include list-reset;
+}
+
+.socials__item:not(:last-child) {
+  &:hover path {
+    fill: $basic-green;
+  }
+
+  &:active {
+    @include active(0.3);
+  }
+}
+
+.socials__item:last-child {
+  &:hover path {
+    stroke: $basic-green;
+  }
+
+  &:active {
+    @include active(0.3);
+  }
+}

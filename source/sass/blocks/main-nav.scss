@@ -1,0 +1,15 @@
+/* Main nav */
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.site-list__item {
+  &:hover {
+    @include hover(0.6);
+  }
+
+  &:active {
+    @include active(0.3);
+  }
+}
