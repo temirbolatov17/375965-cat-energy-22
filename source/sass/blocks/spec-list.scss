@@ -1,0 +1,12 @@
+/* Spec list */
+
+.spec-list {
+  @include list-reset;
+  @include arial(12px, 16px, 400);
+  color: $dark-grey;
+
+  &--extra {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

@@ -2,10 +2,10 @@
 
 .bottom-footer__logo {
   &:hover {
-    @include hover(0.8);
+    @include opacity-set(0.8);
   }
 
   &:active {
-    @include active(0.6);
+    @include opacity-set(0.6);
   }
 }

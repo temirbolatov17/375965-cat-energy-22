@@ -31,10 +31,6 @@
   text-decoration: none;
 }
 
-@mixin active($opacity) {
-  opacity: $opacity;
-}
-
-@mixin hover($opacity) {
+@mixin opacity-set($opacity) {
   opacity: $opacity;
 }

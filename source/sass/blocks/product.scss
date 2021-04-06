@@ -1,0 +1,11 @@
+.product__title {
+  @include link-reset($dark-grey-black);
+
+  & h3 {
+    @include oswald-uppercase(16px, 20px, 400);
+  }
+}
+
+.product__subtitle {
+  @include arial(12px, 20px, 400);
+}

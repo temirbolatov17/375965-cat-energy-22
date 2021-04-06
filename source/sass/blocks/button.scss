@@ -1,6 +1,8 @@
+/* Button */
+
 .button {
   @include link-reset($white);
-  @include oswald-uppercase(14px, 18px, 400);
+  @include oswald-uppercase(16px, 20px, 400);
   background-color: $basic-green;
 
   &:focus {
@@ -19,5 +21,27 @@
   &--submit {
     border: none;
     cursor: pointer;
+  }
+
+  &--suggest {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.button--show-all {
+  background-color: $basic-grey;
+  color: $dark-grey;
+
+  &:focus {
+    background-color: $darken-grey;
+  }
+
+  &:hover {
+    background-color: $darken-grey;
+  }
+
+  &:active {
+    color: rgba($dark-grey, 0.3);
   }
 }

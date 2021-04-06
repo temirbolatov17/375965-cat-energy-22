@@ -10,7 +10,7 @@
   }
 
   &:active {
-    @include active(0.3);
+    @include opacity-set(0.3);
   }
 }
 
@@ -20,6 +20,6 @@
   }
 
   &:active {
-    @include active(0.3);
+    @include opacity-set(0.3);
   }
 }

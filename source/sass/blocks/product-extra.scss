@@ -1,0 +1,6 @@
+/* Product extra */
+
+.product-extra__title {
+  @include oswald(16px, 16px, 400);
+  color: $dark-grey-black;
+}
