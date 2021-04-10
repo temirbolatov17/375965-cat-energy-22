@@ -1,3 +1,7 @@
 .slider__title {
   @include oswald-uppercase(16px, 20px, 400);
 }
+
+.slider__control {
+  display: flex;
+}

@@ -26,6 +26,10 @@
   &--suggest {
     font-size: 14px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 244px;
+    }
   }
 }
 

@@ -1,5 +1,22 @@
 /* Partnership */
 
+.partnership__item {
+  height: 114px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 201px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    position: absolute;
+    background-color: $white;
+    top: 95px;
+  }
+}
+
 .partnership__title {
   @include oswald-uppercase(16px, 18px, 400);
 }

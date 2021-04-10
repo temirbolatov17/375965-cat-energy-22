@@ -2,6 +2,7 @@
 
 .example {
   background-color: $basic-grey;
+  height: 750px;
 }
 
 .example__title {
@@ -18,4 +19,5 @@
 
 .example__list {
   @include list-reset;
+  display: flex;
 }

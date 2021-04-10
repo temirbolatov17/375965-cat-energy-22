@@ -1,4 +1,10 @@
 /* Page header */
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-header__logo {
   text-decoration: none;
 

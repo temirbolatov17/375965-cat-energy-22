@@ -1,5 +1,10 @@
 /* Bottom footer */
 
+.bottom-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .bottom-footer__logo {
   &:hover {
     @include opacity-set(0.8);
