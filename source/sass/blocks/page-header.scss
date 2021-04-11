@@ -1,8 +1,12 @@
 /* Page header */
 
 .page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 70px 100px auto;
+  }
 }
 
 .page-header__logo {

@@ -9,12 +9,8 @@
   }
 }
 
-.site-list__item {
-  &:hover {
-    @include opacity-set(0.6);
-  }
-
-  &:active {
-    @include opacity-set(0.3);
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

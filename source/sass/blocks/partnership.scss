@@ -1,13 +1,8 @@
 /* Partnership */
 
 .partnership__item {
-  height: 114px;
   display: flex;
   justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    height: 201px;
-  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
@@ -24,4 +19,10 @@
 .partnership__adress {
   @include arial(14px, 20px, 400);
   font-style: normal;
+}
+
+.partnership__map {
+  margin: 0;
+  padding: 0;
+  background-color: $basic-grey;
 }

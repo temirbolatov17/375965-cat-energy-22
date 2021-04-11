@@ -26,9 +26,15 @@
   &--suggest {
     font-size: 14px;
     line-height: 18px;
+    padding: 14px 26px;
 
     @media (min-width: $tablet-width) {
       width: 244px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 2;
     }
   }
 }

@@ -1,7 +1,27 @@
 .site-list {
+  display: none;
+
   @include oswald-uppercase(20px, 20px, 500);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .site-list__link {
   @include link-reset($black);
+}
+
+.site-list__item {
+
+  text-align: end;
+
+  &:hover {
+    @include opacity-set(0.6);
+  }
+
+  &:active {
+    @include opacity-set(0.3);
+  }
 }

@@ -1,3 +1,19 @@
+/* Slider */
+
+.slider {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+}
+
 .slider__title {
   @include oswald-uppercase(16px, 20px, 400);
 }
