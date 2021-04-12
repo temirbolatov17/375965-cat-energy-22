@@ -26,7 +26,10 @@
   &--suggest {
     font-size: 14px;
     line-height: 18px;
-    padding: 14px 26px;
+    box-sizing: border-box;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 54px;
 
     @media (min-width: $tablet-width) {
       width: 244px;

@@ -5,7 +5,7 @@
   grid-template-columns: 40px auto 40px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 70px 100px auto;
+    grid-template-columns: 70px auto;
   }
 }
 
@@ -18,5 +18,11 @@
 
   &:active {
     @include opacity-set(0.3);
+  }
+
+  &--middle {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
