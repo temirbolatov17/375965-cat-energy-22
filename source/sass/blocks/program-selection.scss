@@ -1,5 +1,10 @@
 /* Program selection */
 
+.program-selection {
+  display: flex;
+  flex-direction: column;
+}
+
 .program-selection__subtitle {
   @include oswald-uppercase(14px, 18px, 400);
 }

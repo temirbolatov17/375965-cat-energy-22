@@ -1,0 +1,17 @@
+/* Background */
+
+.background {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.background__right {
+  @media (min-width: $desktop-width) {
+    background-repeat: no-repeat;
+    background-image: url("../../img/preview-images/cat-bg-desktop.jpg");
+  }
+}

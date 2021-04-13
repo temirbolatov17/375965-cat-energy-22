@@ -1,5 +1,10 @@
 /* Preview */
 
+.preview {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
 .preview__wrapper {
   background-image: url("../../img/preview-images/cat-bg.png");
   background-repeat: no-repeat;
@@ -11,7 +16,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/preview-images/cat-bg-desktop.jpg");
     background-position: right top;
     display: grid;
     grid-template-columns: 500px auto;
@@ -58,5 +62,6 @@
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
+    margin-top: 70px;
   }
 }

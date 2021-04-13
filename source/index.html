@@ -9,6 +9,10 @@
   </head>
   <body class="page-body">
     <header class="page-header">
+      <div class="background">
+        <div class="background__left"></div>
+        <div class="background__right"></div>
+      </div>
       <div class="page-header__wrapper container">
         <a class="page-header__logo" aria-label="Логотип компании Cat Energy" href="#">
           <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип компании Cat Energy">
@@ -22,19 +26,17 @@
           </button>
           <ul class="main-nav__list site-list site-list--hidden">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">Главная</a>
+              <a class="site-list__link site-list__link--index" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link site-list__link--index" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
+              <a class="site-list__link site-list__link--index" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
-    </header>
-    <main class="page-main">
       <section class="preview">
         <div class="preview__wrapper container">
           <h1 class="page-title page-title--index">Функциональное питание для котов</h1>
@@ -43,6 +45,8 @@
           <a class="button button--suggest" href="form.html">Подобрать программу</a>
         </div>
       </section>
+    </header>
+    <main class="page-main">
       <section class="suggestion-list container">
         <h2 class="visually-hidden">Подбор программы</h2>
         <div class="suggestion-card">

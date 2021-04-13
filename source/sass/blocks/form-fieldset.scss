@@ -4,6 +4,14 @@
   border: none;
 
   @include list-reset;
+
+  &--cat {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+    }
+  }
 }
 
 .form-fieldset__title {
@@ -13,6 +21,7 @@
 .form-fieldset--comment {
   & textarea {
     border: 1px solid $light-grey;
+    width: 100%;
   }
 
   & textarea::placeholder {

@@ -1,5 +1,17 @@
 /* Product extra */
 
+.product-extra {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .product-extra__title {
   @include oswald(16px, 16px, 400);
   color: $dark-grey-black;

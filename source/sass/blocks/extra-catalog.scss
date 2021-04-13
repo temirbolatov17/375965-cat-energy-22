@@ -1,0 +1,13 @@
+/* Extra catalog */
+
+.extra-catalog {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+}
+
+.extra-catalog__title {
+  grid-column: 1/-1;
+}

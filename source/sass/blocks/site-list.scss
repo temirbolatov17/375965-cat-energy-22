@@ -11,6 +11,12 @@
 
 .site-list__link {
   @include link-reset($black);
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
 }
 
 .site-list__item {

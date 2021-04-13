@@ -1,6 +1,15 @@
 /* Page header */
 
+.page-header {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+  }
+}
+
 .page-header__wrapper {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 40px auto 40px;
 
