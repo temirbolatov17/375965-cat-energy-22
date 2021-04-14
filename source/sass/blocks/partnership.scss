@@ -25,4 +25,9 @@
   margin: 0;
   padding: 0;
   background-color: $basic-grey;
+  min-width: 320px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
 }

@@ -1,6 +1,4 @@
 .site-list {
-  display: none;
-
   @include oswald-uppercase(20px, 20px, 500);
 
   @media (min-width: $tablet-width) {

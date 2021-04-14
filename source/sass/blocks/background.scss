@@ -11,7 +11,9 @@
 
 .background__right {
   @media (min-width: $desktop-width) {
-    background-repeat: no-repeat;
     background-image: url("../../img/preview-images/cat-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    height: 694px;
+    z-index: -2;
   }
 }

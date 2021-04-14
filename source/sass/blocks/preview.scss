@@ -16,10 +16,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-position: right top;
     display: grid;
-    grid-template-columns: 500px auto;
-    grid-template-rows: 1fr min-content min-content min-content 1fr;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 200px 1fr 1fr;
+    position: relative;
   }
 }
 
@@ -62,6 +62,10 @@
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
-    margin-top: 70px;
+
+    position: absolute;
+    top: 141px;
+    left: 70px;
+    z-index: -1;
   }
 }

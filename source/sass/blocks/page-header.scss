@@ -8,13 +8,20 @@
 }
 
 .page-header__wrapper {
-  grid-row: 1 / 2;
-  grid-column: 1 / -1;
+
   display: grid;
   grid-template-columns: 40px auto 40px;
+  grid-row: 66px 1fr;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 70px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 200px auto;
+    z-index: 1;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
   }
 }
 
@@ -30,6 +37,10 @@
   }
 
   &--middle {
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
     @media (min-width: $tablet-width) {
       display: none;
     }
