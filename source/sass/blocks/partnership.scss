@@ -1,14 +1,27 @@
 /* Partnership */
 
+.partnership {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1220px auto;
+    grid-template-rows: 1fr;
+  }
+}
+
 .partnership__item {
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    position: absolute;
     background-color: $white;
-    top: 95px;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    z-index: 1;
+    margin: 95px 0;
+    align-self: flex-start;
+    padding: 65px 89px 51px 76px;
   }
 }
 
@@ -29,5 +42,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
+    grid-row: 1 / -1;
+    grid-column: 1 / - 1;
+    align-self: flex-start;
   }
 }

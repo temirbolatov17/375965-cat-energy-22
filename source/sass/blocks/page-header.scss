@@ -1,6 +1,8 @@
 /* Page header */
 
 .page-header {
+  overflow: hidden;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: 150px 1fr;
