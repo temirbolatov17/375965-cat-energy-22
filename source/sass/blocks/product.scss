@@ -1,5 +1,29 @@
+/* Product */
+
+.product {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr min-content;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--more {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.product__image {
+  grid-column: 1 / 2;
+}
+
 .product__title {
   @include link-reset($dark-grey-black);
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
 
   & h3 {
     @include oswald-uppercase(16px, 20px, 400);

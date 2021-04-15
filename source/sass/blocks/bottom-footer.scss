@@ -1,5 +1,24 @@
 /* Bottom footer */
 
+.bottom-footer {
+  background-color: $basic-grey;
+  min-width: 320px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1320px;
+  }
+}
+
+.bottom-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .bottom-footer__logo {
   &:hover {
     @include opacity-set(0.8);

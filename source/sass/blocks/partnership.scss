@@ -1,5 +1,30 @@
 /* Partnership */
 
+.partnership {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1220px auto;
+    grid-template-rows: 1fr;
+  }
+}
+
+.partnership__item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    background-color: $white;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    z-index: 1;
+    margin: 95px 0;
+    align-self: flex-start;
+    padding: 65px 89px 51px 76px;
+  }
+}
+
 .partnership__title {
   @include oswald-uppercase(16px, 18px, 400);
 }
@@ -7,4 +32,18 @@
 .partnership__adress {
   @include arial(14px, 20px, 400);
   font-style: normal;
+}
+
+.partnership__map {
+  margin: 0;
+  padding: 0;
+  background-color: $basic-grey;
+  min-width: 320px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    grid-row: 1 / -1;
+    grid-column: 1 / - 1;
+    align-self: flex-start;
+  }
 }

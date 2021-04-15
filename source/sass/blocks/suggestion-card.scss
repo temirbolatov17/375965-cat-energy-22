@@ -2,6 +2,12 @@
 
 .suggestion-card {
   background-color: $basic-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .suggestion-card__title {
@@ -19,5 +25,15 @@
 
   &:active {
     @include opacity-set(0.3);
+  }
+}
+
+.suggestion-card__image {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
   }
 }

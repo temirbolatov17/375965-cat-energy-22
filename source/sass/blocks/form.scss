@@ -1,5 +1,21 @@
 /* Form */
 
+.form {
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
 .form__notice {
   @include arial(14px, 16px, 400);
+}
+
+.form__submit-area {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

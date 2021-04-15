@@ -21,11 +21,43 @@
   &--submit {
     border: none;
     cursor: pointer;
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 282px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 568px;
+    }
   }
 
   &--suggest {
     font-size: 14px;
     line-height: 18px;
+    box-sizing: border-box;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 244px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+
+  &--order {
+    grid-column: 1 / -1;
+
+    @media (min-width: $desktop-width) {
+      grid-row: 1 / 2;
+      grid-column: 4 / 5;
+      width: 244px;
+    }
   }
 }
 

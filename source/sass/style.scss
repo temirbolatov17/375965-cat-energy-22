@@ -7,16 +7,18 @@
 
 // Blocks
 // Page-body
+@import "blocks/page-main.scss";
 @import "blocks/page-title.scss";
 @import "blocks/page-body.scss";
 @import "blocks/button.scss";
+@import "blocks/container.scss";
 
 // Header
 
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
-
+@import "blocks/background.scss";
 // Preview
 
 @import "blocks/preview.scss";
@@ -60,3 +62,5 @@
 @import "blocks/spec-list";
 @import "blocks/product-extra.scss";
 @import "blocks/promo.scss";
+@import "blocks/extra-catalog.scss";
+@import "blocks/extra-products.scss";

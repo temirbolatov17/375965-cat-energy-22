@@ -2,6 +2,7 @@
 
 .socials {
   @include list-reset;
+  display: flex;
 }
 
 .socials__item:not(:last-child) {

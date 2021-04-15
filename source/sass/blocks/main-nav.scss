@@ -1,15 +1,25 @@
 /* Main nav */
 
-.main-nav__list {
-  @include list-reset;
+.main-nav {
+  grid-column: 2 / 3;
+  grid-row: 2 / -1;
 }
 
-.site-list__item {
-  &:hover {
-    @include opacity-set(0.6);
+.main-nav__list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &:active {
-    @include opacity-set(0.3);
+  @media (min-width: $desktop-width) {
+    margin-left: 470px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

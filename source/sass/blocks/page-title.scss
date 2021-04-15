@@ -5,5 +5,9 @@
 
   &--index {
     color: $white;
+
+    @media (min-width: $tablet-width) {
+      color: $black;
+    }
   }
 }

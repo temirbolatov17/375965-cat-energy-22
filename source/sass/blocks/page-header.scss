@@ -1,4 +1,32 @@
 /* Page header */
+
+.page-header {
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+  }
+}
+
+.page-header__wrapper {
+
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-row: 66px 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 70px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 200px auto;
+    z-index: 1;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+}
+
 .page-header__logo {
   text-decoration: none;
 
@@ -8,5 +36,15 @@
 
   &:active {
     @include opacity-set(0.3);
+  }
+
+  &--middle {
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
