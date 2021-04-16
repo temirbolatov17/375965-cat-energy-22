@@ -1,6 +1,7 @@
 /* Preview */
 
 .preview {
+
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 }
@@ -24,6 +25,10 @@
 }
 
 .page-title {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -35,6 +40,10 @@
 .preview__subtitle {
   @include oswald-uppercase(14px, 14px, 400);
   color: $white;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 
   @media (min-width: $tablet-width) {
     color: $black;

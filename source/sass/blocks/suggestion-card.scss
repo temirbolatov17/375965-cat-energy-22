@@ -3,25 +3,66 @@
 .suggestion-card {
   background-color: $basic-grey;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-bottom: 45px;
   }
 }
 
 .suggestion-card__title {
   @include oswald(24px, 37px, 400);
   text-transform: uppercase;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-left: 52px;
+  }
 }
 
 .suggestion-card__subtitle {
   @include arial(14px, 18px, 400);
+  margin: 0 33px 23px 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-left: 52px;
+  }
 }
 
 .suggestion-card__link {
   @include link-reset($black);
   @include oswald-uppercase(16px, 16px, 400);
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 19px;
+    margin-bottom: 22px;
+    padding-top: 19px;
+    padding-right: 160px;
+    border-top: 1px solid $light-grey-border2;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / -1;
+    margin-left: 52px;
+  }
 
   &:active {
     @include opacity-set(0.3);
@@ -29,8 +70,16 @@
 }
 
 .suggestion-card__image {
+  @media (max-width: $mobile-width-only) {
+    margin: 21px 19px 22px 22px;
+  }
+
   @media (min-width: $tablet-width) {
     order: 2;
+    width: 200px; //временно
+    height: 200px; //временно
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
   }
 
   @media (min-width: $desktop-width) {

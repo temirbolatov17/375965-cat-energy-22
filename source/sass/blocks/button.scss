@@ -39,9 +39,18 @@
     grid-row-start: 4;
     grid-row-end: 5;
     width: 280px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 22px;
+    }
 
     @media (min-width: $tablet-width) {
       width: 244px;
+      padding-top: 14px;
+      padding-bottom: 14px;
     }
 
     @media (min-width: $desktop-width) {

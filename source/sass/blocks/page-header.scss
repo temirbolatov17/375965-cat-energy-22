@@ -5,7 +5,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 76px 1fr;
   }
 }
 
@@ -13,14 +13,16 @@
 
   display: grid;
   grid-template-columns: 40px auto 40px;
-  grid-row: 66px 1fr;
+  grid-template-rows: 65px 1fr;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 70px auto;
+    grid-template-columns: min-content auto;
+    grid-template-rows: 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 200px auto;
+    grid-template-columns: min-content auto;
     z-index: 1;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
@@ -29,6 +31,10 @@
 
 .page-header__logo {
   text-decoration: none;
+  align-self: center;
+  width: 33px;
+  height: 37px;
+  margin: 0 auto;
 
   &:hover {
     @include opacity-set(0.6);
@@ -39,12 +45,28 @@
   }
 
   &--middle {
-
+    width: 101px;
+    height: 18px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+}
+
+.page-header__toggle {
+  display: block;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  position: relative;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

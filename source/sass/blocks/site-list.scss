@@ -1,9 +1,12 @@
 .site-list {
   @include oswald-uppercase(20px, 20px, 500);
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include oswald-uppercase(18px, 24px, 400);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 
@@ -18,8 +21,20 @@
 }
 
 .site-list__item {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
 
-  text-align: end;
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $light-grey-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
 
   &:hover {
     @include opacity-set(0.6);
