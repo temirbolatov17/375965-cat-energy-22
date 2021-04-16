@@ -31,8 +31,28 @@
   }
 
   @media (min-width: $tablet-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+        left: 0;
+        height: 2px;
+        background: $basic-green;
+      }
+    }
+
     &:not(:last-child) {
       margin-right: 36px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: $white;
     }
   }
 
