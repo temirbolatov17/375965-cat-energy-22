@@ -16,6 +16,11 @@
 
 .slider__title {
   @include oswald-uppercase(16px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .slider__control {

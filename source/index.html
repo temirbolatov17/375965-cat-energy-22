@@ -39,7 +39,7 @@
       </div>
       <section class="preview container">
         <div class="preview__wrapper">
-          <h1 class="page-title page-title--index">Функциональное питание для котов</h1>
+          <h1 class="page-title page-title--index">Функциональное<br> питание для котов</h1>
           <p class="preview__subtitle">Занялся собой? Займись котом!</p>
           <img class="preview__image" src="img/preview-images/mobile-preview-image.png" width="280" height="270" alt="Изображение баночки фунционального питания для котов">
           <a class="button button--suggest" href="form.html">Подобрать программу</a>
@@ -89,9 +89,18 @@
           </dl>
           <p class="example__total">Затраты на питание: 15 000 руб.</p>
           <div class="slider">
-            <div class="slider__images">
-              <img class="example__image example__image--current" width="311" height="232" src="img/example-images/before-mobile.png" alt="Фотография жирной кошки">
-              <!--<img class="example__image" src="img/example-images/after-mobile.png" alt="Фотография стройной кошки">-->
+            <div class="slider__wrapper">
+                <div class="image-compare__controls"></div>
+                <div class="image-compare">
+                  <div class="image-compare__side--before image">
+                    <img class="image__before" width="311" height="232" src="img/example-images/before-mobile.png" alt="Фотография жирной кошки">
+                  </div>
+                  <div class="image-compare__side--after image">
+                    <!--<img class="image__before" src="img/example-images/after-mobile.png" alt="Фотография стройной кошки">-->
+                  </div>
+                  <div class="image-compare__accent"></div>
+                </div>
+                <input type="range">
             </div>
             <div class="slider__control">
               <span class="slider__title slider__title--desktop">Было</span>

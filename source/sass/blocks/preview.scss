@@ -7,7 +7,7 @@
 }
 
 .preview__wrapper {
-  background-image: url("../../img/preview-images/cat-bg.png");
+  background-image: url("../img/preview-images/cat-bg.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -47,6 +47,9 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {

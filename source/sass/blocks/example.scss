@@ -26,6 +26,9 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +43,9 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,6 +60,9 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

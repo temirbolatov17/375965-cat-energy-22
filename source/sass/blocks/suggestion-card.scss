@@ -10,16 +10,40 @@
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr min-content;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr min-content min-content;
 
     &:last-child {
       margin-bottom: 45px;
+
+      & .suggestion-card__subtitle {
+        width: 342px;
+      }
+
+      & .suggestion-card__image {
+        width: 268px;
+        height: 200px;
+        margin-right: 27px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     margin-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:last-child .suggestion-card__subtitle {
+      width: 457px;
+    }
+
+    &:last-child .suggestion-card__image {
+      width: 134px;
+      height: 100px;
+      margin-left: 33px;
+      margin-top: 47px;
+      margin-right: 47px;
+    }
   }
 }
 
@@ -29,9 +53,18 @@
   margin-top: 30px;
 
   @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    margin-left: 52px;
+    margin-left: 53px;
+    margin-top: 77px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -43,12 +76,39 @@
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     margin-left: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+    width: 467px;
   }
 }
 
 .suggestion-card__link {
   @include link-reset($black);
   @include oswald-uppercase(16px, 16px, 400);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/suggestion-logos/icon_arrow_short.svg");
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 12px;
+    right: 107px;
+    top: 20px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 128px;
+    }
+  }
 
   @media (max-width: $mobile-width-only) {
     margin-left: 19px;
@@ -62,6 +122,20 @@
     grid-column: 1 / 2;
     grid-row: 3 / -1;
     margin-left: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/suggestion-logos/icon_arrow_long.svg");
+      width: 42px;
+    }
   }
 
   &:active {
@@ -76,13 +150,21 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
-    width: 200px; //временно
-    height: 200px; //временно
+    width: 200px;
+    height: 211px;
     grid-column: 2 / -1;
     grid-row: 1 / -1;
+    margin-top: 81px;
+    margin-right: 62px;
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
+    width: 100px;
+    height: 106px;
+    margin-left: 52px;
+    margin-top: 41px;
+    margin-bottom: 39px;
+    margin-right: 62px;
   }
 }
