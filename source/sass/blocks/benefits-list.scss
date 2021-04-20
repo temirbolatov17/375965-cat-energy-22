@@ -26,6 +26,12 @@
   width: 198px;
   position: relative;
 
+  &:first-child {
+    background-image: url("../img/benefits-images/bg-num-1.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
+  }
+
   &:first-child::before {
     content: url("../img/benefits-images/leaf-mob.svg");
 
@@ -34,6 +40,12 @@
     height: 60px;
     left: 0;
     top: 0;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/benefits-images/bg-num-2.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
   }
 
   &:nth-child(2)::before {
@@ -46,6 +58,12 @@
     top: 0;
   }
 
+  &:nth-child(3) {
+    background-image: url("../img/benefits-images/bg-num-3.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
+  }
+
   &:nth-child(3)::before {
     content: url("../img/benefits-images/eat-mob.svg");
 
@@ -56,7 +74,13 @@
     top: 0;
   }
 
-  &:last-child::before {
+  &:nth-child(4) {
+    background-image: url("../img/benefits-images/bg-num-4.png");
+    background-repeat: no-repeat;
+    background-position: 130px 0;
+  }
+
+  &:nth-child(4)::before {
     content: url("../img/benefits-images/alarm-mob.svg");
 
     position: absolute;
@@ -67,7 +91,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 230px;
+    width: 260px;
     margin-bottom: 0;
     padding: 110px 0;
     font-size: 16px;
