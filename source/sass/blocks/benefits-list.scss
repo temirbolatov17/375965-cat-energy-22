@@ -26,12 +26,6 @@
   width: 198px;
   position: relative;
 
-  &:first-child {
-    background-image: url("../img/benefits-images/bg-num-1.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
-  }
-
   &:first-child::before {
     content: url("../img/benefits-images/leaf-mob.svg");
 
@@ -40,12 +34,6 @@
     height: 60px;
     left: 0;
     top: 0;
-  }
-
-  &:nth-child(2) {
-    background-image: url("../img/benefits-images/bg-num-2.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
   }
 
   &:nth-child(2)::before {
@@ -58,12 +46,6 @@
     top: 0;
   }
 
-  &:nth-child(3) {
-    background-image: url("../img/benefits-images/bg-num-3.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
-  }
-
   &:nth-child(3)::before {
     content: url("../img/benefits-images/eat-mob.svg");
 
@@ -72,12 +54,6 @@
     height: 60px;
     left: 0;
     top: 0;
-  }
-
-  &:nth-child(4) {
-    background-image: url("../img/benefits-images/bg-num-4.png");
-    background-repeat: no-repeat;
-    background-position: 130px 0;
   }
 
   &:nth-child(4)::before {
@@ -96,5 +72,29 @@
     padding: 110px 0;
     font-size: 16px;
     line-height: 24px;
+
+    &:first-child {
+      background-image: url("../img/benefits-images/bg-num-1.png");
+      background-repeat: no-repeat;
+      background-position: 130px 0;
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/benefits-images/bg-num-2.png");
+      background-repeat: no-repeat;
+      background-position: 130px 0;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/benefits-images/bg-num-3.png");
+      background-repeat: no-repeat;
+      background-position: 130px 0;
+    }
+
+    &:nth-child(4) {
+      background-image: url("../img/benefits-images/bg-num-4.png");
+      background-repeat: no-repeat;
+      background-position: 130px 0;
+    }
   }
 }
