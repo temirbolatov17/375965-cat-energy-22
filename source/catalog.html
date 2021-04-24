@@ -16,26 +16,26 @@
         <a class="page-header__logo page-header__logo--middle" href="#">
           <img src="img/logo/logo-middle-mobile.svg" width="101" height="18" alt="Cat Energy">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list site-list site-list--hidden">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">Каталог продукции</a>
+            <li class="site-list__item  site-list__item--active">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-title page-title--catalog container">Каталог продукции</h1>
+      <h1 class="page-title page-title--catalog">Каталог продукции</h1>
       <section class="main-catalog container">
         <ul class="product-list">
           <li class="product-list__item product">
@@ -43,7 +43,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 500 г с курицей">
             </a>
             <a class="product__title" href="#">
-              <h3>Cat Energy pro 500 г</h3>
+              <h3>Cat Energy pro<br> 500 г</h3>
             </a>
             <dl class="spec-list">
               <dt class="spec-list__term">Масса</dt>
@@ -60,7 +60,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 1000 г с курицей">
             </a>
             <a class="product__title" href="#">
-              <h3>Cat Energy pro 1000 г</h3>
+              <h3>Cat Energy pro<br> 1000 г</h3>
             </a>
             <dl class="spec-list">
               <dt class="spec-list__term">Масса</dt>
@@ -77,7 +77,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 500 г с рыбой">
             </a>
             <a class="product__title" href="#">
-              <h3>Cat Energy pro 500 г</h3>
+              <h3>Cat Energy pro<br> 500 г</h3>
             </a>
             <dl class="spec-list">
               <dt class="spec-list__term">Масса</dt>
@@ -94,7 +94,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 1000 г с рыбой">
             </a>
             <a class="product__title" href="#">
-              <h3>Cat Energy pro 1000 г</h3>
+              <h3>Cat Energy pro<br> 1000 г</h3>
             </a>
             <dl class="spec-list">
               <dt class="spec-list__term">Масса</dt>
@@ -111,7 +111,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy slim 500 г с гречкой">
             </a>
             <a class="product__title" href="#">
-              <h3>Cat Energy slim 500 г</h3>
+              <h3>Cat Energy slim<br> 500 г</h3>
             </a>
             <dl class="spec-list">
               <dt class="spec-list__term">Масса</dt>
@@ -128,7 +128,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy slim 1000 г с гречкой">
             </a>
             <a class="product__title" href="#">
-              <h3>Cat Energy slim 1000 г</h3>
+              <h3>Cat Energy slim<br> 1000 г</h3>
             </a>
             <dl class="spec-list">
               <dt class="spec-list__term">Масса</dt>
@@ -145,7 +145,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy slim 500 г с рисом">
             </a>
             <a class="product__title" href="#">
-              <h3>Cat Energy slim 500 г</h3>
+              <h3>Cat Energy slim<br> 500 г</h3>
             </a>
             <dl class="spec-list">
               <dt class="spec-list__term">Масса</dt>
@@ -162,7 +162,7 @@
               <img src="img/catalog-goods-img/example.png" alt="Показать еще">
             </a>
             <a class="product__title product__title--more" href="#">
-              <h3>Показать еще 100500 товаров</h3>
+              <h3>Показать еще<br> 100500 товаров</h3>
             </a>
             <p class="product__subtitle">На самом деле вкусов гораздо больше!</p>
             <a class="button button--show-all" href="#">Показать все</a>
@@ -178,7 +178,7 @@
               <dt class="spec-list__term spec-list__term--extra">1 упаковка (100 г)</dt>
               <dd class="spec-list__definition spec-list__definition--extra">200 Р.
             </dl>
-            <a class="button button--order" href="">Заказать</a>
+            <a class="button button--order button--order-extra" href="">Заказать</a>
           </li>
           <li class="extra-products__item product-extra">
             <h3 class="product-extra__title">Питьевая вода</h3>
@@ -186,7 +186,7 @@
               <dt class="spec-list__term spec-list__term--extra">5 литров</dt>
               <dd class="spec-list__definition spec-list__definition--extra">50 Р.</dd>
             </dl>
-            <a class="button button--order" href="">Заказать</a>
+            <a class="button button--order button--order-extra" href="">Заказать</a>
           </li>
           <li class="extra-products__item product-extra">
             <h3 class="product-extra__title">Молоко</h3>
@@ -194,7 +194,7 @@
               <dt class="spec-list__term spec-list__term--extra">1 литр</dt>
               <dd class="spec-list__definition spec-list__definition--extra">100 Р.</dd>
             </dl>
-            <a class="button button--order" href="">Заказать</a>
+            <a class="button button--order button--order-extra" href="">Заказать</a>
           </li>
           <li class="extra-products__item product-extra">
             <h3 class="product-extra__title">Витамины</h3>
@@ -202,20 +202,20 @@
               <dt class="spec-list__term spec-list__term--extra">1 упаковка (30 г)</dt>
               <dd class="spec-list__definition spec-list__definition--extra">300 Р.</dd>
             </dl>
-            <a class="button button--order" href="">Заказать</a>
+            <a class="button button--order button--order-extra" href="">Заказать</a>
           </li>
         </ul>
         <div class="promo">
-          <img class="promo__image" src="img/promo-img/icon_gift.svg" alt="Закажите все и получите чехол для кота в подарок!">
-          <p class="promo__title">Закажите все и получите чехол для кота в подарок!</p>
+          <img class="promo__image" width="78" height="80" src="img/promo-img/icon_gift.svg" alt="Закажите все и получите чехол для кота в подарок!">
+          <p class="promo__title">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <section class="partnership">
         <div class="partnership__item partnership__wrapper container">
-          <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="partnership__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <h2 class="partnership__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+          <address class="partnership__adress">ул. Большая<br> Конюшенная, д. 19/8<br><br> Санкт-Петербург</address>
         </div>
         <div class="partnership__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1538063769553!2d30.321156441696658!3d59.93916255017416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1616772151673!5m2!1sru!2skz" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" title="офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>

@@ -9,5 +9,10 @@
 }
 
 .extra-catalog__title {
+  @include oswald(24px, 24px, 400);
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    @include oswald(36px, 36px, 400);
+  }
 }

@@ -1,6 +1,12 @@
 /* Partnership */
 
 .partnership {
+  background-color: $basic-grey;
+
+  &--index {
+    background-color: $white;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto 1220px auto;
@@ -11,6 +17,13 @@
 .partnership__item {
   display: flex;
   justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 62px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
@@ -27,6 +40,9 @@
 
 .partnership__title {
   @include oswald-uppercase(16px, 18px, 400);
+  margin: 0 20px 0 0;
+
+  flex: 1 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -38,9 +54,31 @@
   @include arial(14px, 20px, 400);
   font-style: normal;
 
+  & br:first-child {
+    display: none;
+  }
+
+  & br:last-child {
+    display: none;
+  }
+
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-left: 360px;
+
+    & br:first-child {
+      display: block;
+    }
+
+    & br:last-child {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 87px;
   }
 }
 

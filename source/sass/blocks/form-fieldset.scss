@@ -12,22 +12,89 @@
       column-gap: 80px;
     }
   }
+
+  &:nth-child(2) .form-fieldset__title::after {
+    @media (max-width: $mobile-width-only) {
+      margin-left: 45px;
+    }
+  }
 }
 
 .form-fieldset__title {
   @include oswald(24px, 26px, 400);
+  margin-bottom: 36px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 90vw;
+    background-color: $basic-green;
+    top: 15px;
+    margin-left: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+      top: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include oswald(36px, 36px, 400);
+    margin-bottom: 76px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 350px;
+      background-color: $basic-green;
+      top: 20px;
+      left: -390px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 900px;
+      left: -940px;
+    }
+  }
 }
 
 .form-fieldset--comment {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
   & textarea {
     border: 1px solid $light-grey;
     width: 100%;
+    min-height: 144px;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      width: 631px;
+      min-height: 168px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
   }
 
   & textarea::placeholder {
     color: $dark-grey;
+    padding-top: 10px;
+    padding-left: 14px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 18px;
+    }
   }
 }

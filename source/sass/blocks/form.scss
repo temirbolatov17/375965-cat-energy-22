@@ -12,10 +12,25 @@
 
 .form__notice {
   @include arial(14px, 16px, 400);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
+  }
 }
 
 .form__submit-area {
+  margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
   }
 }

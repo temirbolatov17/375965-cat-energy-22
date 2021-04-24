@@ -39,6 +39,11 @@
 @import "blocks/example.scss";
 @import "blocks/stats-list.scss";
 @import "blocks/slider.scss";
+@import "blocks/image-compare.scss";
+@import "blocks/inner-sides.scss";
+@import "blocks/image.scss";
+@import "blocks/toggle-control.scss";
+@import "blocks/range-control.scss";
 
 // Footer
 
@@ -57,6 +62,7 @@
 
 // Catalog
 
+@import "blocks/main-catalog.scss";
 @import "blocks/product-list.scss";
 @import "blocks/product.scss";
 @import "blocks/spec-list";

@@ -4,15 +4,18 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
     column-gap: 60px;
+    row-gap: 140px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
+    row-gap: 144px;
   }
 }

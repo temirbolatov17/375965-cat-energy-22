@@ -17,12 +17,12 @@
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: min-content auto;
+    grid-template-columns: 180px auto;
     grid-template-rows: 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: min-content auto;
+    grid-template-columns: 610px auto;
     z-index: 1;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
@@ -35,6 +35,10 @@
   width: 33px;
   height: 37px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 
   &:hover {
     @include opacity-set(0.6);
@@ -68,5 +72,12 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.page-header .container:nth-of-type(2) {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    padding: 0;
   }
 }

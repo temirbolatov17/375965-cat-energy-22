@@ -3,8 +3,13 @@
 .promo {
   background-image: url("../img/promo-img/gift-photo-mobile.png");
   background-repeat: no-repeat;
-  height: 289px;
   width: 280px;
+  min-height: 289px;
+  margin-bottom: 35px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -18,4 +23,12 @@
 .promo__title {
   @include arial(16px, 20px, 400);
   color: $white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 43px;
+}
+
+.promo__image {
+  margin-top: 58px;
+  margin-bottom: 40px;
 }

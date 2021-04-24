@@ -2,6 +2,24 @@
 
 .form-list {
   @include list-reset;
+  margin-bottom: 46px;
+  position: relative;
+
+  &--program {
+    border-top: 1px solid $light-grey-border2;
+    border-bottom: 1px solid $light-grey-border2;
+    padding-top: 28px;
+    padding-bottom: 19px;
+
+    @media (max-width: $mobile-width-only) {
+      margin-right: -20px;
+      margin-left: -20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid $light-grey-border2;
+    }
+  }
 
   &--contacts {
     @media (min-width: $desktop-width) {
@@ -12,9 +30,18 @@
   }
 
   &--details {
+    & label {
+      margin-left: 16px;
+
+      @media (min-width: $tablet-width) {
+        margin-left: 19px;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 61px;
     }
 
     @media (min-width: $desktop-width) {
@@ -27,45 +54,85 @@
   @include oswald-uppercase(16px, 18px, 400);
 
   display: flex;
+  margin-bottom: 20px;
+
+  & label {
+    align-self: center;
+    flex: 0 0 auto;
+    margin-right: 14px;
+  }
 
   & input[type="text"] {
     border: 1px solid $light-grey;
     height: 42px;
     width: 100%;
+    padding-left: 16px;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
+  }
+
+  & input[type="radio"] {
+    margin-right: 16px;
+    margin-left: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
   }
 
   & input[type="number"] {
     border: 1px solid $light-grey;
     height: 42px;
     width: 100%;
+    padding-left: 16px;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
   }
 
   & input[type="email"] {
     border: 1px solid $light-grey;
     height: 42px;
     width: 100%;
+    padding-left: 16px;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
   }
 
   & input[type="tel"] {
     border: 1px solid $light-grey;
     height: 42px;
     width: 100%;
+    padding-left: 16px;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
   }
 
   & input::placeholder {
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include oswald-uppercase(20px, 30px, 400);
   }
 }

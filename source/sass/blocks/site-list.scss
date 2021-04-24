@@ -27,6 +27,10 @@
 
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid $light-grey-border;
+
+    &:last-child {
+      border-bottom: 1px solid $light-grey-border;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -50,8 +54,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      background: $white;
+    &--index-active::after {
+      background-color: $white;
     }
   }
 
