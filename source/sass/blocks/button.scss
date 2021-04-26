@@ -45,17 +45,23 @@
     grid-row-end: 5;
     width: 280px;
     text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-bottom: 33px;
+    margin-top: 2px;
 
     @media (max-width: $mobile-width-only) {
       margin-bottom: 22px;
+      margin-left: 20px;
     }
 
     @media (min-width: $tablet-width) {
       width: 244px;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      margin-left: 82px;
+      font-size: 20px;
+      line-height: 20px;
     }
 
     @media (min-width: $desktop-width) {

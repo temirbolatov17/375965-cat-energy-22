@@ -7,10 +7,15 @@
 }
 
 .preview__wrapper {
-  background-image: url("../img/preview-images/cat-bg.png");
+  background-image: url("../../img/preview-images/cat-bg-rect.png"), url("../img/preview-images/cat-bg.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -50,6 +55,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 49px;
+    margin-left: 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,10 +67,17 @@
 }
 
 .preview__image {
+  @media (max-width: $mobile-width-only) {
+    margin-left: 20px;
+    margin-top: 14px;
+  }
+
   @media (min-width: $tablet-width) {
     order: 2;
     width: 709px;
     height: 609px;
+    margin-top: -84px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {

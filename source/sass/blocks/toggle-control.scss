@@ -1,5 +1,35 @@
 .toggle-control {
+  @media (max-width: $mobile-width-only) {
+    background-color: $white;
+    border: 1px solid $light-grey-extra-border;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 84px;
+    height: 14px;
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.toggle-control__button {
+  @media (max-width: $mobile-width-only) {
+    width: 35px;
+    height: 6px;
+    position: absolute;
+    top: 3px;
+    border: none;
+    background-color: $basic-green;
+    border-radius: 6px;
+
+    &--before {
+      left: 6px;
+    }
+
+    &--after {
+      right: 6px;
+    }
   }
 }

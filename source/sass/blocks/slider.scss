@@ -16,6 +16,12 @@
 
 .slider__title {
   @include oswald-uppercase(16px, 20px, 400);
+  margin-right: 18px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: 18px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -26,6 +32,8 @@
 .slider__control {
   display: flex;
   text-align: center;
+  margin-left: 45px;
+  align-items: center;
 }
 
 .slider__images {

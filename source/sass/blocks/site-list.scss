@@ -8,6 +8,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop-width) {
+    @include oswald-uppercase(20px, 30px, 400);
+  }
 }
 
 .site-list__link {
@@ -41,7 +45,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 6px;
+        bottom: 14px;
         left: 0;
         height: 2px;
         background: $basic-green;

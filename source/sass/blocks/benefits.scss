@@ -1,6 +1,11 @@
 .benefits__title {
   @include oswald(36px, 40px, 400);
 
+  @media (max-width: $mobile-width-only) {
+    margin-top: 25px;
+    margin-bottom: 39px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;

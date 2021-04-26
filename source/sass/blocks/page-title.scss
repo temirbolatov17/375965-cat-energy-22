@@ -5,6 +5,16 @@
 
   &--index {
     color: $white;
+
+    @media (max-width: $mobile-width-only) {
+      margin-top: 26px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 86px;
+      margin-bottom: 22px;
+    }
   }
 
   &--catalog {

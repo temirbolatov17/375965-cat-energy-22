@@ -1,7 +1,7 @@
 /* Example */
 
 .example {
-  background-color: $basic-grey;
+  background-color: $basic-grey-bg;
   min-width: 320px;
 
   @media (min-width: $desktop-width) {
@@ -22,6 +22,7 @@
 
 .example__title {
   @include oswald(36px, 40px, 400);
+  margin-top: 48px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
@@ -57,6 +58,11 @@
 .example__food-cost {
   display: flex;
 
+  @media (max-width: $mobile-width-only) {
+    margin-left: 46px;
+    margin-top: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
   }
@@ -86,6 +92,7 @@
 
 .example__price {
   margin-top: 14px;
+  margin-left: 4px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -99,6 +106,7 @@
 .example__list {
   @include list-reset;
   display: flex;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
