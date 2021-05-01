@@ -23,6 +23,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -37,5 +42,7 @@
 
   @media (min-width: $desktop-width) {
     width: 300px;
+    margin-bottom: 27px;
+    margin-top: 24px;
   }
 }

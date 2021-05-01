@@ -68,6 +68,7 @@
 .preview__image {
   @media (max-width: $mobile-width-only) {
     margin-top: 14px;
+    align-self: center;
   }
 
   @media (min-width: $tablet-width) {

@@ -45,6 +45,7 @@
     grid-row-end: 5;
     width: 280px;
     text-align: center;
+    align-self: center;
     padding-top: 11px;
     padding-bottom: 11px;
     margin-bottom: 33px;
@@ -95,12 +96,14 @@
       margin-bottom: 0;
       margin-right: auto;
       margin-left: auto;
+      margin-top: 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 244px;
       align-self: flex-end;
       margin-right: 0;
+      align-self: center;
     }
   }
 }
