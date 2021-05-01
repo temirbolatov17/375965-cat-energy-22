@@ -36,6 +36,7 @@
   width: 33px;
   height: 37px;
   margin: 0 auto;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -61,6 +62,7 @@
     height: 18px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding-left: 0;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -77,13 +79,15 @@
   align-self: center;
   position: relative;
   background-color: $white;
+  margin-left: -20px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.page-header .container:nth-of-type(2) {
+.page-header--index .container:nth-of-type(2),
+.page-header .container:nth-last-of-type(1) {
   @media (max-width: $mobile-width-only) {
     width: 100%;
     padding: 0;
