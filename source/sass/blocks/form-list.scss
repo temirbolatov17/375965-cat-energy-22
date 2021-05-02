@@ -2,19 +2,17 @@
 
 .form-list {
   @include list-reset;
-  margin-bottom: 46px;
+  margin-bottom: 24px;
   position: relative;
 
-  &--program {
-    border-top: 1px solid $light-grey-border2;
-    border-bottom: 1px solid $light-grey-border2;
-    padding-top: 28px;
-    padding-bottom: 19px;
-
+  &--info {
     @media (max-width: $mobile-width-only) {
-      margin-right: -20px;
-      margin-left: -20px;
+      width: 280px;
     }
+  }
+
+  &--program {
+    padding-top: 28px;
 
     @media (min-width: $tablet-width) {
       border: 1px solid $light-grey-border2;
@@ -85,6 +83,70 @@
     }
   }
 
+  &--radio {
+    @media (min-width: $tablet-width) {
+      margin-left: 28px;
+    }
+  }
+
+  &--radio input[type="radio"] {
+    display: none;
+
+    &:checked + label::after {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      left: 8px;
+      top: 3px;
+      background-color: $basic-green;
+
+      @media (min-width: $tablet-width) {
+        width: 18px;
+        height: 18px;
+        left: 11px;
+        top: 6px;
+      }
+    }
+  }
+
+  &--radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 60px;
+    user-select: none;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      left: 0;
+      top: -5px;
+      border: 1px solid $light-grey-extra-border;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:hover::before {
+      border-color: $darken-grey-hover;
+    }
+  }
+
+  &--radio input[type="radio"]:disabled + label {
+    opacity: 0.3;
+  }
+
   & input[type="number"] {
     border: 1px solid $light-grey;
     height: 42px;
@@ -134,5 +196,57 @@
 
   @media (min-width: $tablet-width) {
     @include oswald-uppercase(20px, 30px, 400);
+  }
+
+  &--checkbox input[type="checkbox"] {
+    display: none;
+
+    &:checked + label::after {
+      content: url("../img/form-img/checkbox-tick.png");
+      left: 6px;
+      top: 2px;
+      position: absolute;
+      width: 18px;
+      height: 14px;
+
+      @media (min-width: $tablet-width) {
+        left: 11px;
+        top: 0;
+      }
+    }
+  }
+
+  &--checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 60px;
+    user-select: none;
+    margin: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $light-grey-extra-border;
+      left: 0;
+      top: -5px;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:hover::before {
+      border-color: $darken-grey-hover;
+    }
+  }
+
+  &--checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.3;
   }
 }

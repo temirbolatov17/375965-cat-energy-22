@@ -22,6 +22,42 @@
       color: $white;
     }
   }
+
+  &--index-active {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        background-color: $basic-green;
+
+        @media (min-width: $desktop-width) {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        background: $basic-green;
+      }
+    }
+  }
 }
 
 .site-list__item {
@@ -38,28 +74,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    &--active {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 14px;
-        left: 0;
-        height: 2px;
-        background: $basic-green;
-      }
-    }
-
     &:not(:last-child) {
       margin-right: 36px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--index-active::after {
-      background-color: $white;
     }
   }
 

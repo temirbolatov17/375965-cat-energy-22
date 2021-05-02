@@ -59,14 +59,16 @@
       width: 244px;
       padding-top: 17px;
       padding-bottom: 17px;
-      margin-left: 82px;
       font-size: 20px;
       line-height: 20px;
+      align-self: flex-start;
+      margin-left: 82px;
     }
 
     @media (min-width: $desktop-width) {
       grid-column-start: 1;
       grid-column-end: 2;
+      align-self: center;
     }
   }
 

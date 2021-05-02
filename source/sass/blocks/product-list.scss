@@ -11,6 +11,7 @@
     grid-template-columns: 324px 324px;
     column-gap: 60px;
     row-gap: 140px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {

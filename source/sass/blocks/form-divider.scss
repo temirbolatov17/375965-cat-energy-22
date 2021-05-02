@@ -1,0 +1,16 @@
+.form-divider {
+  @media (max-width: $mobile-width-only) {
+    height: 1px;
+    background-color: $light-grey-border2;
+    width: 200vw;
+    margin-left: -40vw;
+
+    &:last-child {
+      margin-bottom: 26px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
