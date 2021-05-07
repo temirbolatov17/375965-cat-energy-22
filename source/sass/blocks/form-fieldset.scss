@@ -8,8 +8,8 @@
   &--cat {
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 80px;
+      grid-template-columns: 570px 1fr;
+      column-gap: 75px;
     }
   }
 
@@ -18,12 +18,67 @@
       margin-left: 45px;
     }
   }
+
+  &--details {
+    & legend {
+      margin-bottom: 40px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 62px;
+      }
+    }
+  }
+
+  &--comment {
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 63px;
+    }
+
+    & textarea {
+      border: 1px solid $light-grey;
+      width: 100%;
+      min-height: 144px;
+
+      @include oswald-uppercase(16px, 18px, 400);
+      color: $dark-grey;
+
+      @media (min-width: $tablet-width) {
+        @include oswald-uppercase(20px, 30px, 400);
+        width: 631px;
+        min-height: 168px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100%;
+      }
+    }
+
+    & textarea::placeholder {
+      color: $dark-grey;
+      padding-top: 10px;
+      padding-left: 14px;
+
+      @media (min-width: $tablet-width) {
+        padding-left: 18px;
+      }
+    }
+  }
 }
 
 .form-fieldset__title {
   @include oswald(24px, 26px, 400);
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   &::after {
     content: "";
@@ -32,11 +87,11 @@
     width: 90vw;
     background-color: $basic-green;
     top: 15px;
-    margin-left: 15px;
+    margin-left: 21px;
 
     @media (min-width: $tablet-width) {
       margin-left: 40px;
-      top: 20px;
+      top: 22px;
     }
   }
 
@@ -50,7 +105,7 @@
       height: 2px;
       width: 350px;
       background-color: $basic-green;
-      top: 20px;
+      top: 22px;
       left: -390px;
     }
   }
@@ -59,42 +114,6 @@
     &::before {
       width: 900px;
       left: -940px;
-    }
-  }
-}
-
-.form-fieldset--comment {
-  margin-bottom: 22px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
-  }
-
-  & textarea {
-    border: 1px solid $light-grey;
-    width: 100%;
-    min-height: 144px;
-
-    @include oswald-uppercase(16px, 18px, 400);
-    color: $dark-grey;
-
-    @media (min-width: $tablet-width) {
-      width: 631px;
-      min-height: 168px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-    }
-  }
-
-  & textarea::placeholder {
-    color: $dark-grey;
-    padding-top: 10px;
-    padding-left: 14px;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 18px;
     }
   }
 }

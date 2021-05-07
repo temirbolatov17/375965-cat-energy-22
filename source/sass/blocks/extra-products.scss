@@ -1,8 +1,22 @@
 .extra-products {
+  margin-bottom: 36px;
+
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     row-gap: 0;
     margin-bottom: 69px;
+    margin-left: 0;
+    border-right: 1px solid $light-grey-extra-border;
+    border-left: 1px solid $light-grey-extra-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-bottom: 87px;
   }
 }

@@ -1,13 +1,24 @@
+.benefits {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $light-grey-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+}
+
 .benefits__title {
   @include oswald(36px, 40px, 400);
 
   @media (max-width: $mobile-width-only) {
     margin-top: 25px;
-    margin-bottom: 39px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 0;
   }
 }

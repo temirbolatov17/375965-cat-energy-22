@@ -47,6 +47,7 @@
 
   @media (max-width: $mobile-width-only) {
     text-align: center;
+    margin-top: 11px;
   }
 
   @media (min-width: $tablet-width) {
@@ -62,6 +63,10 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-left: 81px;
+    margin-top: 18px;
+    margin-bottom: 52px;
+    z-index: 2;
   }
 }
 
@@ -75,7 +80,8 @@
     order: 2;
     width: 709px;
     height: 609px;
-    margin-top: -84px;
+    margin-top: -115px;
+    margin-left: 63px;
     z-index: -1;
   }
 
@@ -88,8 +94,8 @@
     grid-row-end: -1;
 
     position: absolute;
-    top: 250px;
-    left: 70px;
+    top: 263px;
+    left: 13px;
     z-index: -1;
   }
 }

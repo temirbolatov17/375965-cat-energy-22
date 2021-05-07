@@ -12,6 +12,10 @@
     border-bottom: 1px solid $light-grey-extra-border;
     padding-bottom: 20px;
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 28px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -34,15 +38,21 @@
 .product-extra__title {
   @include oswald-uppercase(16px, 16px, 400);
   color: $dark-grey-black;
+  margin-top: 13px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     @include oswald-uppercase(20px, 20px, 400);
     width: 400px;
+    margin-top: 26px;
+    margin-bottom: 24px;
+    margin-left: 38px;
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
     margin-bottom: 27px;
     margin-top: 24px;
+    margin-left: 0;
   }
 }

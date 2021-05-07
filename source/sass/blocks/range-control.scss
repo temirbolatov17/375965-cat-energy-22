@@ -2,4 +2,9 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    align-self: center;
+  }
 }

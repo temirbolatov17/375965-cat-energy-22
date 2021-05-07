@@ -3,6 +3,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -10,6 +11,7 @@
     grid-template-rows: 280px 280px;
     column-gap: 154px;
     row-gap: 37px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +23,7 @@
 }
 
 .benefits-list__item {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   padding-left: 80px;
   width: 198px;
   position: relative;

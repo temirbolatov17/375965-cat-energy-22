@@ -1,0 +1,12 @@
+.slider-button {
+  @include oswald-uppercase(16px, 20px, 400);
+  border: none;
+  cursor: pointer;
+  background-color: $basic-grey-bg;
+
+
+  @media (min-width: $tablet-width) {
+    @include oswald-uppercase(20px, 30px, 400);
+    border-bottom: 1px dotted rgba($black, 0.24);
+  }
+}

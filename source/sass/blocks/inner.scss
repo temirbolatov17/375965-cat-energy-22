@@ -1,0 +1,25 @@
+.inner {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    height: 462px;
+  }
+}
+
+.inner__slide {
+  @media (max-width: $mobile-width-only) {
+    &--toggle {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}

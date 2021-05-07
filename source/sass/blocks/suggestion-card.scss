@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-bottom: 45px;
+    margin-bottom: 71px;
     display: flex;
     flex-wrap: wrap;
 
@@ -67,6 +67,18 @@
   @include arial(14px, 18px, 400);
   margin: 0 33px 23px 20px;
 
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -91,7 +103,7 @@
   @media (max-width: $mobile-width-only) {
     margin-left: 19px;
     margin-bottom: 22px;
-    padding-top: 19px;
+    padding-top: 22px;
     padding-right: 160px;
     border-top: 1px solid $light-grey-border2;
   }
@@ -129,13 +141,14 @@
     height: 211px;
     grid-column: 2 / -1;
     grid-row: 1 / -1;
-    margin-top: 81px;
+    margin-top: 77px;
     margin-right: 62px;
 
     &--fat {
       width: 268px;
       height: 200px;
-      margin-right: 27px;
+      margin-top: 90px;
+      margin-right: 29px;
     }
   }
 

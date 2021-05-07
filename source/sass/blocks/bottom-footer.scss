@@ -19,14 +19,18 @@
     padding-top: 55px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 34px;
+  }
 }
 
 .bottom-footer__logo {
   align-self: center;
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 32px;
-    padding-top: 39px;
+    margin-top: 35px;
+    margin-bottom: 25px;
   }
 
   &:hover {
@@ -36,11 +40,17 @@
   &:active {
     @include opacity-set(0.6);
   }
+
+  @media (min-width: $tablet-width) {
+    align-self: baseline;
+  }
 }
 
 .bottom-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+
   @media (max-width: $mobile-width-only) {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 22px;
@@ -55,5 +65,9 @@
       background-color: $light-grey-border2;
       top: 0;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }

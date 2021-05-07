@@ -10,7 +10,8 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    row-gap: 6px;
+    @include arial(16px, 16px, 400);
+    row-gap: 3px;
   }
 
   &--extra {
@@ -23,11 +24,13 @@
       justify-content: flex-end;
       font-size: 16px;
       line-height: 20px;
+      margin-top: 7px;
     }
 
     @media (min-width: $desktop-width) {
       justify-content: space-between;
       width: 300px;
+      margin-left: 26px;
     }
   }
 }
@@ -37,11 +40,13 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $light-grey-extra-border;
+    padding-bottom: 6px;
+    padding-top: 6px;
   }
 
   &--extra {
     @media (min-width: $tablet-width) {
-      margin-right: 55px;
+      margin-right: 49px;
       border-bottom: none;
     }
   }
@@ -53,11 +58,18 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $light-grey-extra-border;
+    padding-bottom: 6px;
+    padding-top: 6px;
   }
 
   &--extra {
     @media (min-width: $tablet-width) {
       border-bottom: none;
+      margin-right: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 13px;
     }
   }
 }
