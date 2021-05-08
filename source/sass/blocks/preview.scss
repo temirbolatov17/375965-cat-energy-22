@@ -5,7 +5,7 @@
   grid-row: 1 / -1;
 
   @media (max-width: $mobile-width-only) {
-    background-image: url("../../img/preview-images/cat-bg-rect.png"), url("../img/preview-images/cat-bg.png");
+    background-image: url("../img/preview-images/cat-bg-rect.png"), url("../img/preview-images/cat-bg.png");
     background-repeat: repeat-x, no-repeat;
     background-position: 0 0, top center;
   }

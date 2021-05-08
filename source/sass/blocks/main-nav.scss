@@ -13,6 +13,10 @@
     grid-column: 2 / -1;
     margin-left: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .main-nav--closed + .page-header__toggle::before {
