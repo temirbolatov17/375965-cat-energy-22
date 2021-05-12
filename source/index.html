@@ -101,29 +101,36 @@
           </div>
         </div>
         <div class="slider">
-          <div class="inner container">
-            <div class="inner__slide inner__slide--top">
-              <div class="image">
-                <img class="image__top" width="311" height="232" src="img/example-images/before-mobile.png" alt="Фотография жирной кошки">
+          <div class="slider__inner">
+            <div class="slide slide--top">
+              <div class="slide__image slide__image--before">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/example-images/after-img.png">
+                  <img src="/img/example-images/before-mobile.png" width="311" height="232" alt="Полный кот">
+                </picture>
               </div>
             </div>
-            <div class="inner__slide inner__slide--target inner__slide--toggle">
-              <div class="image">
-                <img class="image__target" src="img/example-images/after-mobile.png" alt="Фотография стройной кошки">
+            <div class="slide slide--target slide--hidden-mobile" style="right: 50%">
+              <div class="slide__image slide__image--after">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/example-images/before-img.png">
+                  <img src="/img/example-images/after-mobile.png" width="251" height="240" alt="Здоровый кот">
+                </picture>
               </div>
             </div>
             <div class="slide-divider"></div>
           </div>
           <div class="slider__control">
-            <button class="slider-button slider-button--old" type="button">Было</button>
+            <button class="slider-button slider-button--before" type="button">Было</button>
+            <div class="range-control">
+              <input class="range" type="range" min="0" max="100%" value="50%">
+            </div>
             <div class="toggle-control">
               <button class="toggle-control__button toggle-control__button--before" type="button"></button>
             </div>
-            <div class="range-control">
-              <input class="range-outside" type="range">
-            </div>
-            <button class="slider-button slider-button--new" type="button">Стало</button>
+            <button class="slider-button slider-button--after" type="button">Стало</button>
           </div>
+          <p class="slider__hint">Текущее значение : <span></span></p>
         </div>
       </section>
     </main>

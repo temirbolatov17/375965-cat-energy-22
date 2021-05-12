@@ -4,9 +4,22 @@
   cursor: pointer;
   background-color: $basic-grey-bg;
 
-
   @media (min-width: $tablet-width) {
     @include oswald-uppercase(20px, 30px, 400);
     border-bottom: 1px dotted rgba($black, 0.24);
+  }
+
+  &--before {
+    @media (max-width: $mobile-width-only) {
+      padding-left: 11px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+
+    &--after {
+      background-color: $basic-grey-bg;
+    }
   }
 }

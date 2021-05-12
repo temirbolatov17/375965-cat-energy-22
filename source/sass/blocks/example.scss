@@ -4,14 +4,21 @@
   background-color: $basic-grey-bg;
   min-width: 320px;
   padding-top: 27px;
-  padding-bottom: 31px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1320px;
+    display: grid;
+    grid-template-columns: 570px 650px;
+    justify-content: center;
+    background: linear-gradient(to top, $basic-grey, 457px, $white 200px);
+    padding-top: 0;
+    padding-bottom: 24px;
   }
 }
 
@@ -19,11 +26,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 16px;
+    margin-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    padding: 0;
+    margin-bottom: 45px;
   }
 }
 
@@ -38,12 +49,15 @@
 
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
     z-index: 1;
+    margin-top: 24px;
+    margin-bottom: 147px;
   }
 }
 
@@ -61,6 +75,8 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     z-index: 1;
+    margin-top: 0;
+    margin-bottom: 67px;
   }
 }
 
@@ -70,6 +86,7 @@
   @media (max-width: $mobile-width-only) {
     margin-left: 46px;
     margin-top: 20px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $tablet-width) {
@@ -84,6 +101,7 @@
     grid-column: 1 / 2;
     grid-row-start: 4;
     z-index: 1;
+    align-items: flex-end;
   }
 }
 
@@ -105,6 +123,18 @@
   }
 }
 
+.example__costs {
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .example__price {
   margin-top: 14px;
   margin-left: 4px;
@@ -114,7 +144,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 64px;
   }
 }
 
@@ -132,5 +164,6 @@
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
+    margin-bottom: 60px;
   }
 }

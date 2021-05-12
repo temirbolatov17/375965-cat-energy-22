@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey-bg;
+    background-color: $basic-grey;
     top: 65px;
   }
 }
@@ -51,8 +51,16 @@
   text-align: center;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+
   &:not(:last-child) {
-    margin-right: 32px;
+    margin-right: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 40px;
+    }
   }
 
   &:last-child .stats-list__number {
@@ -68,5 +76,9 @@
       left: 10px;
       width: 142px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }

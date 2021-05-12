@@ -9,9 +9,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 280px 280px;
-    column-gap: 154px;
+    column-gap: 60px;
     row-gap: 37px;
-    margin-bottom: 43px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +71,7 @@
   @media (min-width: $tablet-width) {
     width: 260px;
     margin-bottom: 0;
-    padding: 110px 0;
+    padding: 134px 0 0;
     font-size: 16px;
     line-height: 24px;
 
