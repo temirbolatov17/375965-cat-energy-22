@@ -19,7 +19,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: min-content auto;
     grid-template-rows: min-content;
-    margin-top: 8px;
+    margin-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,11 +27,14 @@
     z-index: 1;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    padding-top: 41px;
-    padding-right: 33px;
+    padding-top: 38px;
   }
 
   &--index {
+    @media (min-width: $tablet-width) {
+      margin-top: 8px;
+    }
+
     @media (min-width: $desktop-width) {
       grid-template-columns: 610px auto;
     }
@@ -48,6 +51,8 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 24px;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }

@@ -31,7 +31,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: -10px;
+        bottom: -8px;
         left: 0;
         height: 2px;
         background-color: $basic-green;
@@ -51,7 +51,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: -7px;
+        bottom: -8px;
         left: 0;
         height: 2px;
         background: $basic-green;
@@ -76,6 +76,7 @@
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
       margin-right: 36px;
+      padding-top: 23px;
     }
   }
 

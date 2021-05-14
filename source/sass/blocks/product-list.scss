@@ -13,14 +13,12 @@
     row-gap: 140px;
     justify-content: center;
     margin-top: 85px;
-    margin-bottom: 69px;
-    margin-left: 17px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     row-gap: 144px;
-    margin-left: 16px;
   }
 }

@@ -11,7 +11,11 @@
     <header class="page-header">
       <div class="page-header__wrapper container">
         <a class="page-header__logo" aria-label="Логотип компании Cat Energy" href="#">
-          <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип компании Cat Energy">
+          <picture>
+            <source media="(min-width: 1440px)" width="202" height="59" srcset="/img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="174" height="52" srcset="/img/logo/logo-tablet.svg">
+            <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип компании Cat Energy">
+          </picture>
         </a>
         <a class="page-header__logo page-header__logo--middle" href="#">
           <img src="img/logo/logo-middle-mobile.svg" width="101" height="18" alt="Cat Energy">
@@ -40,7 +44,10 @@
         <ul class="product-list">
           <li class="product-list__item product">
             <a class="product__image" href="#">
-              <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 500 г с курицей">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-goods-img/product-tablet-1.png">
+                <img src="img/catalog-goods-img/product-mob-1.png" alt="Изображение упаковки Cat Energy pro 500 г с курицей">
+              </picture>
             </a>
             <a class="product__title" href="#">
               <h3>Cat Energy pro<br> 500 г</h3>
@@ -57,7 +64,10 @@
           </li>
           <li class="product-list__item product">
             <a class="product__image" href="#">
-              <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 1000 г с курицей">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-goods-img/product-tablet-2.png">
+                <img src="img/catalog-goods-img/product-mob-2.png" alt="Изображение упаковки Cat Energy pro 1000 г с курицей">
+              </picture>
             </a>
             <a class="product__title" href="#">
               <h3>Cat Energy pro<br> 1000 г</h3>
@@ -74,7 +84,10 @@
           </li>
           <li class="product-list__item product">
             <a class="product__image" href="#">
-              <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 500 г с рыбой">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-goods-img/product-tablet-3.png">
+                <img src="img/catalog-goods-img/product-mob-3.png" alt="Изображение упаковки Cat Energy pro 500 г с рыбой">
+              </picture>
             </a>
             <a class="product__title" href="#">
               <h3>Cat Energy pro<br> 500 г</h3>
@@ -91,7 +104,10 @@
           </li>
           <li class="product-list__item product">
             <a class="product__image" href="#">
-              <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy pro 1000 г с рыбой">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-goods-img/product-tablet-4.png">
+                <img src="img/catalog-goods-img/product-mob-4.png" alt="Изображение упаковки Cat Energy pro 1000 г с рыбой">
+              </picture>
             </a>
             <a class="product__title" href="#">
               <h3>Cat Energy pro<br> 1000 г</h3>
@@ -108,7 +124,10 @@
           </li>
           <li class="product-list__item product">
             <a class="product__image" href="#">
-              <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy slim 500 г с гречкой">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-goods-img/product-tablet-5.png">
+                <img src="img/catalog-goods-img/product-mob-5.png" alt="Изображение упаковки Cat Energy slim 500 г с гречкой">
+              </picture>
             </a>
             <a class="product__title" href="#">
               <h3>Cat Energy slim<br> 500 г</h3>
@@ -125,7 +144,10 @@
           </li>
           <li class="product-list__item product">
             <a class="product__image" href="#">
-              <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy slim 1000 г с гречкой">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-goods-img/product-tablet-6.png">
+                <img src="img/catalog-goods-img/product-mob-6.png" alt="Изображение упаковки Cat Energy slim 1000 г с гречкой">
+              </picture>
             </a>
             <a class="product__title" href="#">
               <h3>Cat Energy slim<br> 1000 г</h3>
@@ -142,7 +164,10 @@
           </li>
           <li class="product-list__item product">
             <a class="product__image" href="#">
-              <img src="img/catalog-goods-img/example.png" alt="Изображение упаковки Cat Energy slim 500 г с рисом">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-goods-img/product-tablet-7.png">
+                <img src="img/catalog-goods-img/product-mob-7.png" alt="Изображение упаковки Cat Energy slim 500 г с рисом">
+              </picture>
             </a>
             <a class="product__title" href="#">
               <h3>Cat Energy slim<br> 500 г</h3>
@@ -184,7 +209,7 @@
             <h3 class="product-extra__title">Питьевая вода</h3>
             <dl class="spec-list spec-list--extra">
               <dt class="spec-list__term spec-list__term--extra">5 литров</dt>
-              <dd class="spec-list__definition spec-list__definition--extra">50 Р.</dd>
+              <dd class="spec-list__definition spec-list__definition--extra spec-list__definition--short">50 Р.</dd>
             </dl>
             <a class="button button--order button--order-extra" href="">Заказать</a>
           </li>

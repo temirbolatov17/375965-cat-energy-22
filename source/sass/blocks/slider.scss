@@ -9,8 +9,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: none;
-    padding-bottom: 31px;
+    padding-bottom: 0;
+    background: linear-gradient(to right, $basic-grey 56%, $basic-grey-bg 0);
+    align-self: flex-end;
+    position: relative;
+    height: 461px;
   }
 }
 
@@ -31,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -33px;
+    top: -193px;
   }
 }
 
@@ -51,8 +54,10 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 8px;
     margin-left: 73px;
+    position: absolute;
+    bottom: 68px;
   }
 }
 

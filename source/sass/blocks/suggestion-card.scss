@@ -28,6 +28,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    &:last-child {
+      margin-bottom: 71px;
+    }
+
     &:last-child .suggestion-card__subtitle {
       width: 457px;
     }
@@ -65,7 +69,7 @@
 
 .suggestion-card__subtitle {
   @include arial(14px, 18px, 400);
-  margin: 0 33px 23px 20px;
+  margin: 0 33px 0 20px;
 
   & br {
     display: none;
@@ -77,6 +81,11 @@
     @media (min-width: $desktop-width) {
       display: none;
     }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $light-grey-border2;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $tablet-width) {
@@ -99,13 +108,13 @@
   @include link-reset($black);
   @include oswald-uppercase(16px, 16px, 400);
   position: relative;
+  display: flex;
+  align-items: center;
 
   @media (max-width: $mobile-width-only) {
     margin-left: 19px;
-    margin-bottom: 22px;
-    padding-top: 22px;
-    padding-right: 160px;
-    border-top: 1px solid $light-grey-border2;
+    margin-bottom: 20px;
+    padding-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -119,6 +128,27 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 59px;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 12px;
+    margin-left: 17px;
+    display: inline-block;
+    background-image: url("../img/suggestion-logos/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -8px center;
+    transition: background-position 0.2s;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+  }
+
+  &:hover::after {
+    background-position: 0 center;
   }
 
   &:active {

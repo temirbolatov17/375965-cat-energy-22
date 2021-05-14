@@ -8,8 +8,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 2px;
+    margin-top: 7px;
     margin-right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 11px;
   }
 }
 
@@ -20,5 +24,9 @@
 
   &:active {
     @include opacity-set(0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
   }
 }

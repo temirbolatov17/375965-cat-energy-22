@@ -14,6 +14,10 @@
     row-gap: 3px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: 2px;
+  }
+
   &--extra {
     font-size: 14px;
     line-height: 14px;
@@ -30,7 +34,7 @@
     @media (min-width: $desktop-width) {
       justify-content: space-between;
       width: 300px;
-      margin-left: 26px;
+      margin-left: 24px;
     }
   }
 }
@@ -70,6 +74,12 @@
 
     @media (min-width: $desktop-width) {
       margin-right: 13px;
+    }
+  }
+
+  &--short {
+    @media (min-width: $desktop-width) {
+      margin-right: 22px;
     }
   }
 }

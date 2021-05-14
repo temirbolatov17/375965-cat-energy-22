@@ -11,7 +11,11 @@
     <header class="page-header">
       <div class="page-header__wrapper container">
         <a class="page-header__logo" aria-label="Логотип компании Cat Energy" href="#">
-          <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип компании Cat Energy">
+          <picture>
+            <source media="(min-width: 1440px)" width="202" height="59" srcset="/img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="174" height="52" srcset="/img/logo/logo-tablet.svg">
+            <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип компании Cat Energy">
+          </picture>
         </a>
         <a class="page-header__logo page-header__logo--middle" href="#">
           <img src="img/logo/logo-middle-mobile.svg" width="101" height="18" alt="Cat Energy">
@@ -86,7 +90,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-fieldset form-fieldset--comment">
-            <legend class="form-fieldset__title">Комментарий</legend>
+            <legend class="form-fieldset__title form-fieldset__title--comment">Комментарий</legend>
             <textarea name="comment-textarea" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form-fieldset form-fieldset--details">

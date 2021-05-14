@@ -30,7 +30,7 @@
   }
 
   &--comment {
-    margin-bottom: 22px;
+    margin-bottom: 19px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 60px;
@@ -61,11 +61,11 @@
 
     & textarea::placeholder {
       color: $dark-grey;
-      padding-top: 10px;
-      padding-left: 14px;
+      padding-top: 7px;
+      padding-left: 12px;
 
       @media (min-width: $tablet-width) {
-        padding-left: 18px;
+        padding-left: 15px;
       }
     }
   }
@@ -92,6 +92,16 @@
     @media (min-width: $tablet-width) {
       margin-left: 40px;
       top: 22px;
+    }
+  }
+
+  &--comment {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 74px;
     }
   }
 
