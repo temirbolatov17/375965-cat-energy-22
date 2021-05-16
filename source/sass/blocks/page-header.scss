@@ -55,11 +55,21 @@
     padding-bottom: 24px;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+
+    & img {
+      width: 174px;
+      height: 52px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+
+    & img {
+      width: 202px;
+      height: 59px;
+    }
   }
 
   &:hover {
@@ -80,6 +90,11 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+    margin-top: 8px;
   }
 }
 

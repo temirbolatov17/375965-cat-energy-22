@@ -36,27 +36,15 @@
   }
 }
 
-.socials__item:not(:last-child) {
-  &:hover path {
+.socials__link {
+  & svg {
+    fill: $basic-grey-svg;
+  }
+
+  &:hover svg {
     fill: $basic-green;
   }
 
-  &:active {
-    @include opacity-set(0.3);
-  }
-}
-
-.socials__item:last-child {
-  &:hover path {
-    stroke: $basic-green;
-  }
-
-  &:active {
-    @include opacity-set(0.3);
-  }
-}
-
-.socials__link {
   @media (min-width: $tablet-width) {
     &--vkontakte svg {
       width: 30px;

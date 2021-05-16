@@ -16,10 +16,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
-
-    &--after {
-      background-color: $basic-grey-bg;
-    }
+    background: transparent;
   }
 }

@@ -58,6 +58,11 @@
     right: 0;
     left: 0;
     top: -75px;
+
+    & img {
+      width: 169px;
+      height: 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {

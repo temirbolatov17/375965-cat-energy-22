@@ -20,5 +20,9 @@
     background-color: rgba($basic-green, 0.85);
     background-position: right;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/preview-images/cat-bg-rect-deskop.png"), url("../img/preview-images/cat-bg-desktop@2x.jpg");
+    }
   }
 }

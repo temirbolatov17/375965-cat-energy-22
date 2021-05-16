@@ -10,10 +10,10 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    background: linear-gradient(to right, $basic-grey 56%, $basic-grey-bg 0);
     align-self: flex-end;
     position: relative;
     height: 461px;
+    background: linear-gradient(to right, #f2f2f2 56%, #eaeaea 0);
   }
 }
 

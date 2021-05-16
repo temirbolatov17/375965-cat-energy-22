@@ -15,9 +15,9 @@
     display: grid;
     grid-template-columns: 570px 650px;
     justify-content: center;
-    background: linear-gradient(to top, $basic-grey, 461px, $white 200px);
+    position: relative;
+    background: linear-gradient(to right, #f2f2f2 70%, #eaeaea 70%);
     padding-top: 0;
-    padding-bottom: 0;
     margin-bottom: 0;
   }
 }
@@ -58,6 +58,8 @@
     z-index: 1;
     margin-top: 30px;
     margin-bottom: 147px;
+    position: absolute;
+    top: -166px;
   }
 }
 
@@ -77,6 +79,19 @@
     z-index: 1;
     margin-top: 0;
     margin-bottom: 67px;
+    padding-top: 70px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 

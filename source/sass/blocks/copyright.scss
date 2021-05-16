@@ -18,8 +18,12 @@
 }
 
 .copyright__logo {
-  &:hover path {
-    fill: $basic-green;
+  & svg {
+    fill: $basic-grey-svg;
+
+    &:hover {
+      fill: $basic-green;
+    }
   }
 
   &:active {
