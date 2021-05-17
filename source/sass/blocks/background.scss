@@ -6,14 +6,23 @@
     grid-row: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 82px;
   }
 }
 
 .background__right {
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/preview-images/cat-bg-desktop.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../img/preview-images/cat-bg-rect-deskop.png"),
+      url("../img/preview-images/cat-bg-desktop.jpg");
+    background-repeat: no-repeat repeat;
     height: 694px;
     z-index: -2;
+    background-color: rgba($basic-green, 0.85);
+    background-position: right;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/preview-images/cat-bg-rect-deskop.png"), url("../img/preview-images/cat-bg-desktop@2x.jpg");
+    }
   }
 }

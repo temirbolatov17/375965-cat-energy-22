@@ -22,9 +22,14 @@
     border: none;
     cursor: pointer;
     width: 280px;
+    padding-top: 11px;
+    padding-bottom: 11px;
 
     @media (min-width: $tablet-width) {
       width: 282px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -39,24 +44,76 @@
     grid-row-start: 4;
     grid-row-end: 5;
     width: 280px;
+    text-align: center;
+    align-self: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
 
     @media (min-width: $tablet-width) {
       width: 244px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      font-size: 20px;
+      line-height: 20px;
+      align-self: flex-start;
+      margin-left: 82px;
+      margin-bottom: 0;
+      order: -1;
+      z-index: 2;
     }
 
     @media (min-width: $desktop-width) {
       grid-column-start: 1;
       grid-column-end: 2;
+      align-self: center;
+      z-index: 2;
+      margin-left: 81px;
     }
   }
 
   &--order {
     grid-column: 1 / -1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 7px;
+
+    @media (min-width: $tablet-width) {
+      width: 248px;
+      margin-bottom: 41px;
+      margin-top: 18px;
+    }
 
     @media (min-width: $desktop-width) {
       grid-row: 1 / 2;
       grid-column: 4 / 5;
+      width: 168px;
+      margin-bottom: 39px;
+      margin-top: 14px;
+    }
+  }
+
+  &--order-extra {
+    margin-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      width: 632px;
+      align-self: center;
+      margin-bottom: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 244px;
+      margin-right: 8px;
+      align-self: center;
     }
   }
 }
@@ -64,6 +121,10 @@
 .button--show-all {
   background-color: $basic-grey;
   color: $dark-grey;
+  width: 280px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &:focus {
     background-color: $darken-grey;
@@ -75,5 +136,16 @@
 
   &:active {
     color: rgba($dark-grey, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    margin-bottom: 28px;
+    margin-right: 3px;
   }
 }

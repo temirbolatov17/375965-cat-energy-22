@@ -3,13 +3,21 @@
 .preview {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../img/preview-images/cat-bg-rect.png"), url("../img/preview-images/cat-bg.png");
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 0, top center;
+  }
 }
 
 .preview__wrapper {
-  background-image: url("../../img/preview-images/cat-bg.png");
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    align-items: center;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -18,15 +26,19 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 400px auto;
-    grid-template-rows: 200px 1fr 1fr;
+    grid-template-rows: 200px 1fr;
     position: relative;
   }
 }
 
 .page-title {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -36,8 +48,19 @@
   @include oswald-uppercase(14px, 14px, 400);
   color: $white;
 
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+    margin-top: 11px;
+  }
+
   @media (min-width: $tablet-width) {
     color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+    margin-left: 88px;
+    z-index: 2;
+    order: -1;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,14 +68,26 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-top: 18px;
+    margin-bottom: 52px;
+    margin-left: 81px;
   }
 }
 
 .preview__image {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 14px;
+    width: 280px;
+    height: 270px;
+  }
+
   @media (min-width: $tablet-width) {
     order: 2;
     width: 709px;
     height: 609px;
+    margin-top: -88px;
+    z-index: -1;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,10 +97,11 @@
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
+    margin-left: 34px;
 
     position: absolute;
-    top: 141px;
-    left: 70px;
+    top: 229px;
+    left: 13px;
     z-index: -1;
   }
 }

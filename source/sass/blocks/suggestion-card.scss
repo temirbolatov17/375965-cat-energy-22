@@ -3,25 +3,153 @@
 .suggestion-card {
   background-color: $basic-grey;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr min-content min-content;
+
+    &:last-child {
+      margin-bottom: 45px;
+
+      & .suggestion-card__subtitle {
+        width: 342px;
+      }
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-bottom: 71px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 71px;
+    }
+
+    &:last-child .suggestion-card__subtitle {
+      width: 457px;
+    }
+
+    &:last-child .suggestion-card__image {
+      width: 134px;
+      height: 100px;
+      margin-left: 33px;
+      margin-top: 47px;
+      margin-right: 47px;
+    }
   }
 }
 
 .suggestion-card__title {
   @include oswald(24px, 37px, 400);
   text-transform: uppercase;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-left: 53px;
+    margin-top: 77px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .suggestion-card__subtitle {
   @include arial(14px, 18px, 400);
+  margin: 0 33px 0 20px;
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $light-grey-border2;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-left: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+    width: 467px;
+  }
 }
 
 .suggestion-card__link {
   @include link-reset($black);
   @include oswald-uppercase(16px, 16px, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 19px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / -1;
+    margin-left: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 12px;
+    margin-left: 17px;
+    display: inline-block;
+    background-image: url("../img/suggestion-logos/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -8px center;
+    transition: background-position 0.2s;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+  }
+
+  &:hover::after {
+    background-position: 0 center;
+  }
 
   &:active {
     @include opacity-set(0.3);
@@ -29,11 +157,57 @@
 }
 
 .suggestion-card__image {
+  @media (max-width: $mobile-width-only) {
+    margin: 21px 19px 22px 22px;
+
+    &--fat {
+      margin: 24px 11px 22px 13px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     order: 2;
+    width: 200px;
+    height: 211px;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    margin-top: 77px;
+    margin-right: 62px;
+
+    &--fat {
+      width: 268px;
+      height: 200px;
+      margin-top: 90px;
+      margin-right: 29px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
+    width: 100px;
+    height: 106px;
+    margin-left: 52px;
+    margin-top: 41px;
+    margin-bottom: 39px;
+    margin-right: 62px;
+  }
+}
+
+.suggestion-card__arrow {
+  position: absolute;
+
+  @media (max-width: $mobile-width-only) {
+    left: 119px;
+    bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 185px;
+    bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 188px;
+    bottom: 68px;
   }
 }

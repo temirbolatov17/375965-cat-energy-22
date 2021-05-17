@@ -5,7 +5,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -13,22 +13,64 @@
 
   display: grid;
   grid-template-columns: 40px auto 40px;
-  grid-row: 66px 1fr;
+  grid-template-rows: 65px 1fr;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 70px auto;
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content;
+    margin-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 200px auto;
+    grid-template-columns: 1fr auto;
     z-index: 1;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
+    padding-top: 38px;
+  }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      margin-top: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 610px auto;
+    }
   }
 }
 
 .page-header__logo {
   text-decoration: none;
+  align-self: center;
+  width: 33px;
+  height: 37px;
+  margin: 0 auto;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 24px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    & img {
+      width: 174px;
+      height: 52px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    & img {
+      width: 202px;
+      height: 59px;
+    }
+  }
 
   &:hover {
     @include opacity-set(0.6);
@@ -39,12 +81,43 @@
   }
 
   &--middle {
-
+    width: 101px;
+    height: 18px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding-left: 0;
 
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+}
+
+.page-header__toggle {
+  display: block;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  position: relative;
+  background-color: $white;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header--index .container:nth-of-type(2),
+.page-header .container:nth-last-of-type(1) {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    padding: 0;
   }
 }

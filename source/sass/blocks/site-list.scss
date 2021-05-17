@@ -1,9 +1,16 @@
 .site-list {
   @include oswald-uppercase(20px, 20px, 500);
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include oswald-uppercase(18px, 24px, 400);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include oswald-uppercase(20px, 30px, 400);
   }
 }
 
@@ -15,11 +22,69 @@
       color: $white;
     }
   }
+
+  &--index-active {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -8px;
+        left: 0;
+        height: 2px;
+        background-color: $basic-green;
+
+        @media (min-width: $desktop-width) {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -8px;
+        left: 0;
+        height: 2px;
+        background: $basic-green;
+      }
+    }
+  }
 }
 
 .site-list__item {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 23px;
 
-  text-align: end;
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $light-grey-border;
+
+    &:last-child {
+      border-bottom: 1px solid $light-grey-border;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 36px;
+      padding-top: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
 
   &:hover {
     @include opacity-set(0.6);

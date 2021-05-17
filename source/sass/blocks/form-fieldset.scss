@@ -8,26 +8,133 @@
   &--cat {
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 80px;
+      grid-template-columns: 570px 1fr;
+      column-gap: 75px;
+    }
+  }
+
+  &:nth-child(2) .form-fieldset__title::after {
+    @media (max-width: $mobile-width-only) {
+      margin-left: 45px;
+    }
+  }
+
+  &--details {
+    & legend {
+      margin-bottom: 40px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 62px;
+      }
+    }
+  }
+
+  &--comment {
+    margin-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 63px;
+    }
+
+    & textarea {
+      border: 1px solid $light-grey;
+      width: 100%;
+      min-height: 150px;
+      box-sizing: border-box;
+
+      @include oswald-uppercase(16px, 18px, 400);
+      color: $dark-grey;
+
+      &:hover {
+        border-color: $light-grey-extra-border;
+      }
+
+      &:focus {
+        outline: none;
+        border: 2px solid $dark-grey;
+      }
+
+      @media (min-width: $tablet-width) {
+        @include oswald-uppercase(20px, 30px, 400);
+        width: 631px;
+        min-height: 174px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100%;
+      }
+    }
+
+    & textarea::placeholder {
+      color: $dark-grey;
+      padding-top: 7px;
+      padding-left: 12px;
+
+      @media (min-width: $tablet-width) {
+        padding-left: 15px;
+      }
     }
   }
 }
 
 .form-fieldset__title {
   @include oswald(24px, 26px, 400);
-}
+  margin-bottom: 35px;
+  padding-left: 0;
+  position: relative;
 
-.form-fieldset--comment {
-  & textarea {
-    border: 1px solid $light-grey;
-    width: 100%;
-
-    @include oswald-uppercase(16px, 18px, 400);
-    color: $dark-grey;
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 
-  & textarea::placeholder {
-    color: $dark-grey;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 90vw;
+    background-color: $basic-green;
+    top: 15px;
+    margin-left: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+      top: 22px;
+    }
+  }
+
+  &--comment {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 74px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include oswald(36px, 36px, 400);
+    margin-bottom: 76px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 350px;
+      background-color: $basic-green;
+      top: 22px;
+      left: -390px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 900px;
+      left: -940px;
+    }
   }
 }

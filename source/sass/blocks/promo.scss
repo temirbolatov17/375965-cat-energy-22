@@ -1,21 +1,84 @@
 /* Promo */
 
 .promo {
-  background-image: url("../../img/promo-img/gift-photo-mobile.png");
+  background-image: url("../img/promo-img/gift-photo-mobile.png");
   background-repeat: no-repeat;
-  height: 289px;
+  background-size: 280px 289px;
   width: 280px;
+  min-height: 289px;
+  margin-bottom: 35px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-img/gift-photo-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/promo-img/gift-photo-tablet.png");
+    background-size: 708px 200px;
     width: 708px;
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 75px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-img/gift-photo-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    background-image: url("../img/promo-img/gift-photo-desktop.png");
+    background-size: 245px 289px;
+    width: 245px;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 289px;
+    margin-bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-img/gift-photo-desktop@2x.png");
+    }
   }
 }
 
 .promo__title {
   @include arial(16px, 20px, 400);
   color: $white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 124px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 43px;
+  }
+}
+
+.promo__image {
+  margin-top: 57px;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin: -4px 0 0 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

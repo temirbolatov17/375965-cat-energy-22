@@ -6,8 +6,60 @@
   &--index {
     color: $white;
 
+    @media (max-width: $mobile-width-only) {
+      margin-top: 26px;
+      margin-bottom: 15px;
+    }
+
     @media (min-width: $tablet-width) {
-      color: $black;
+      margin-left: 87px;
+      margin-bottom: 22px;
+      order: -2;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 81px;
+      margin-top: 23px;
+      z-index: 2;
+    }
+  }
+
+  &--catalog {
+    margin: 0 auto;
+    padding: 27px 20px 40px 0;
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 30px 80px 30px;
+      width: 708px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 64px 80px 82px 84px;
+      width: 1220px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+
+    @include oswald(60px, 60px, 400);
+  }
+
+  &--form {
+    align-self: flex-start;
+    margin-top: 27px;
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 39px;
+      margin-bottom: 34px;
+      margin-top: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 63px;
+      margin-left: 0;
     }
   }
 }

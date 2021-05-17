@@ -39,6 +39,12 @@
 @import "blocks/example.scss";
 @import "blocks/stats-list.scss";
 @import "blocks/slider.scss";
+@import "blocks/slide-divider.scss";
+@import "blocks/slide.scss";
+@import "blocks/slider-button.scss";
+@import "blocks/range.scss";
+@import "blocks/toggle-control.scss";
+@import "blocks/range-control.scss";
 
 // Footer
 
@@ -54,9 +60,11 @@
 @import "blocks/form.scss";
 @import "blocks/form-fieldset.scss";
 @import "blocks/form-list.scss";
+@import "blocks/form-divider.scss";
 
 // Catalog
 
+@import "blocks/main-catalog.scss";
 @import "blocks/product-list.scss";
 @import "blocks/product.scss";
 @import "blocks/spec-list";

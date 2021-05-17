@@ -3,29 +3,133 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 280px 280px;
-    column-gap: 154px;
+    column-gap: 60px;
     row-gap: 37px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 280px;
-    column-gap: 80px;
+    column-gap: 65px;
+    margin-bottom: 0;
   }
 }
 
 .benefits-list__item {
-  width: 100%;
   margin-bottom: 26px;
+  padding-left: 80px;
+  width: 198px;
+  position: relative;
+
+  &:last-child br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &:first-child::before {
+    content: url("../img/benefits-images/leaf-mob.svg");
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/benefits-images/leaf-tablet.svg");
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &:nth-child(2)::before {
+    content: url("../img/benefits-images/tub-mob.svg");
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/benefits-images/tub-tablet.svg");
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &:nth-child(3)::before {
+    content: url("../img/benefits-images/eat-mob.svg");
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/benefits-images/eat-tablet.svg");
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &:nth-child(4)::before {
+    content: url("../img/benefits-images/alarm-mob.svg");
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/benefits-images/alarm-tablet.svg");
+      width: 80px;
+      height: 80px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    width: 230px;
+    width: 260px;
     margin-bottom: 0;
+    padding: 113px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:first-child {
+      background-image: url("../img/benefits-images/bg-num-1.svg");
+      background-repeat: no-repeat;
+      background-position: 126px 0;
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/benefits-images/bg-num-2.svg");
+      background-repeat: no-repeat;
+      background-position: 122px -2px;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/benefits-images/bg-num-3.svg");
+      background-repeat: no-repeat;
+      background-position: 124px -2px;
+    }
+
+    &:nth-child(4) {
+      background-image: url("../img/benefits-images/bg-num-4.svg");
+      background-repeat: no-repeat;
+      background-position: 124px 0;
+    }
   }
 }

@@ -1,0 +1,14 @@
+.slide-divider {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+    -webkit-transform: translateX(-50%); /* stylelint-disable */
+    transform: translateX(-50%);
+    background-color: $white;
+  }
+}

@@ -3,19 +3,41 @@
 .form {
   @media (min-width: $tablet-width) {
     padding-right: 36px;
+    margin-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    margin-left: 0;
   }
 }
 
 .form__notice {
   @include arial(14px, 16px, 400);
+  text-align: center;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include arial(16px, 16px, 400);
+    margin-left: 61px;
+    margin-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
+    margin-top: 19px;
+  }
 }
 
 .form__submit-area {
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
   }
 }

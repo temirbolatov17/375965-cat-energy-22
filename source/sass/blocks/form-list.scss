@@ -2,23 +2,78 @@
 
 .form-list {
   @include list-reset;
+  margin-bottom: 24px;
+  position: relative;
+
+  &--info {
+    @media (max-width: $mobile-width-only) {
+      width: 280px;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--program {
+    padding-top: 28px;
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid $light-grey-border2;
+      padding-bottom: 7px;
+      margin-bottom: 74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      box-sizing: border-box;
+      margin-left: 3px;
+      margin-bottom: 68px;
+      padding-top: 30px;
+      width: 570px;
+    }
+  }
 
   &--contacts {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 80px;
+      column-gap: 70px;
+      margin-bottom: 47px;
     }
   }
 
   &--details {
+    margin-bottom: 30px;
+
+    & label {
+      margin-left: 16px;
+
+      @media (min-width: $tablet-width) {
+        margin-left: 19px;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 53px;
+      margin-bottom: 17px;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 80px;
+      margin-bottom: 23px;
     }
   }
 }
@@ -27,45 +82,350 @@
   @include oswald-uppercase(16px, 18px, 400);
 
   display: flex;
+  margin-bottom: 14px;
+  position: relative;
+
+  & svg {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    @media (min-width: $tablet-width) {
+      right: 19px;
+      top: 19px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  & label {
+    align-self: center;
+    flex: 0 0 auto;
+    margin-right: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 16px;
+    }
+  }
 
   & input[type="text"] {
     border: 1px solid $light-grey;
-    height: 42px;
+    height: 45px;
     width: 100%;
+    padding-left: 16px;
+    box-sizing: border-box;
+
+    &:hover {
+      border-color: $light-grey-extra-border;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $dark-grey;
+    }
+
+    &:focus:invalid {
+      outline: none;
+      border: 2px solid $red-error;
+    }
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+      height: 52px;
+      box-sizing: border-box;
+    }
+  }
+
+  & input[type="radio"] {
+    margin-right: 16px;
+    margin-left: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
+  }
+
+  &--radio {
+    &:last-child {
+      @media (max-width: $mobile-width-only) {
+        margin-bottom: 11px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 28px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--radio input[type="radio"] {
+    display: none;
+
+    &:checked + label::after {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      left: 8px;
+      top: 3px;
+      background-color: $basic-green;
+
+      @media (min-width: $tablet-width) {
+        width: 18px;
+        height: 18px;
+        left: 11px;
+        top: 6px;
+      }
+    }
+  }
+
+  &--radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 45px;
+    user-select: none;
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 59px;
+      margin-bottom: 3px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      left: 0;
+      top: -5px;
+      border: 1px solid $light-grey-extra-border;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:hover::before {
+      border-color: $darken-grey-hover;
+    }
+  }
+
+  &--radio input[type="radio"]:disabled + label {
+    opacity: 0.3;
   }
 
   & input[type="number"] {
     border: 1px solid $light-grey;
-    height: 42px;
+    height: 45px;
     width: 100%;
+    padding-left: 16px;
+    box-sizing: border-box;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    &:hover {
+      border-color: $light-grey-extra-border;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $dark-grey;
+    }
+
+    &:focus:valid {
+      outline: none;
+      border: 2px solid $basic-green;
+    }
+
+    &:focus:invalid {
+      outline: none;
+      border: 2px solid $red-error;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+      height: 52px;
+      box-sizing: border-box;
+    }
   }
 
   & input[type="email"] {
     border: 1px solid $light-grey;
-    height: 42px;
+    height: 45px;
     width: 100%;
+    padding-left: 16px;
+    box-sizing: border-box;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    &:hover {
+      border-color: $light-grey-extra-border;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $dark-grey;
+
+      & + svg {
+        fill: $basic-green;
+      }
+    }
+
+    &:focus:valid {
+      outline: none;
+      border: 2px solid $dark-grey;
+    }
+
+    &:focus:invalid {
+      outline: none;
+      border: 2px solid $red-error;
+
+      & + svg {
+        fill: $red-error;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 23px;
+      height: 52px;
+      box-sizing: border-box;
+    }
   }
 
   & input[type="tel"] {
     border: 1px solid $light-grey;
-    height: 42px;
+    height: 45px;
     width: 100%;
+    padding-left: 16px;
+    box-sizing: border-box;
 
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    &:hover {
+      border-color: $light-grey-extra-border;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $dark-grey;
+
+      & + svg {
+        fill: $basic-green;
+      }
+    }
+
+    &:focus:valid {
+      outline: none;
+      border: 2px solid $dark-grey;
+    }
+
+    &:focus:invalid {
+      outline: none;
+      border: 2px solid $red-error;
+
+      & + svg {
+        fill: $red-error;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 17px;
+      height: 52px;
+      box-sizing: border-box;
+    }
   }
 
   & input::placeholder {
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      @include oswald-uppercase(20px, 30px, 400);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include oswald-uppercase(20px, 30px, 400);
+  }
+
+  &--checkbox {
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &--checkbox input[type="checkbox"] {
+    display: none;
+
+    &:checked + label::after {
+      content: url("../img/form-img/checkbox-tick.svg");
+      left: 6px;
+      top: 2px;
+      position: absolute;
+      width: 18px;
+      height: 14px;
+
+      @media (min-width: $tablet-width) {
+        left: 11px;
+        top: 0;
+      }
+    }
+  }
+
+  &--checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 45px;
+    user-select: none;
+    margin: 0;
+    margin-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 60px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $light-grey-extra-border;
+      left: 0;
+      top: -5px;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:hover::before {
+      border-color: $darken-grey-hover;
+    }
+  }
+
+  &--checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.3;
   }
 }
