@@ -92,21 +92,21 @@
   @include link-reset($dark-grey-black);
   grid-column: 2 / -1;
   grid-row: 1 / 2;
-  width: 76px;
+  width: 100px;
   align-self: baseline;
-
-  & br {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-  }
 
   & h3 {
     @include oswald-uppercase(16px, 20px, 400);
     margin-top: 0;
     margin-bottom: 0;
+
+    & br {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: inline-block;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       @include oswald-uppercase(20px, 24px, 400);

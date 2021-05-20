@@ -40,6 +40,7 @@ targetAfterButton.addEventListener('click', (event) => {
   targetText.textContent = `${max}%`;
   targetDivider.style.left = `${max}%`;
   targetSlider.style.right = getValue(max);
+  topSlider.style.left = takeValue(min);
 });
 
 targetBeforeButton.addEventListener('click', (event) => {
@@ -47,4 +48,5 @@ targetBeforeButton.addEventListener('click', (event) => {
   targetText.textContent = `${min}%`;
   targetDivider.style.left = `${min}%`;
   targetSlider.style.right = getValue(min);
+  topSlider.style.left = takeValue(max);
 });
