@@ -41,35 +41,30 @@
 
 .partnership__title {
   @include oswald-uppercase(16px, 20px, 400);
-  margin: 0 20px 0 0;
-
-  flex: 1 0 auto;
+  margin: 0;
+  flex: 1 1 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     margin-left: 41px;
+    width: 230px;
+    flex-grow: 0;
   }
 }
 
 .partnership__adress {
   @include arial(14px, 20px, 400);
   font-style: normal;
-
-  & br:first-child {
-    display: none;
-  }
-
-  & br:last-child {
-    display: none;
-  }
-
+  text-align: start;
+  width: 275px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    text-align: end;
     margin-right: 43px;
+    text-align: end;
+    width: 190px;
 
     & br:first-child {
       display: block;
@@ -82,8 +77,16 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-right: 90px;
+    margin-right: 55px;
     text-align: start;
+  }
+}
+
+.partnership__town {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
   }
 }
 
@@ -101,6 +104,8 @@
   }
 
   & iframe {
+    width: 100%;
+
     @media (min-width: $tablet-width) {
       height: 400px;
     }

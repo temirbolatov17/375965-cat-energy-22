@@ -5,6 +5,16 @@
 
   &:active {
     @include opacity-set(0.3);
+
+    & ~ .copyright__logo {
+      @include opacity-set(0.3);
+    }
+  }
+
+  &:hover {
+    & ~ .copyright__logo svg {
+      fill: $basic-green;
+    }
   }
 
   @media (min-width: $tablet-width) {

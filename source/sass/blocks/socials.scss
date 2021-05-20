@@ -21,18 +21,28 @@
   }
 
   @media (min-width: $tablet-width) {
-    align-items: center;
+    align-items: flex-start;
     margin-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
   }
 }
 
 .socials__item {
   @media (min-width: $tablet-width) {
     margin-right: 27px;
+    padding-top: 3px;
 
     &:last-child {
       margin-right: 0;
+      padding-top: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
