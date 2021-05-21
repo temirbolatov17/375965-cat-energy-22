@@ -38,6 +38,7 @@
 
         @media (min-width: $desktop-width) {
           background-color: $white;
+          bottom: -5px;
         }
       }
     }
@@ -51,7 +52,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: -8px;
+        bottom: -5px;
         left: 0;
         height: 2px;
         background: $basic-green;

@@ -55,6 +55,10 @@
     fill: $basic-green;
   }
 
+  &:active {
+    @include opacity-set(0.3);
+  }
+
   @media (min-width: $tablet-width) {
     &--vkontakte svg {
       width: 30px;

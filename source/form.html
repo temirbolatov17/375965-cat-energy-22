@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма</title>
 
-    <link rel="preload" href="js/script.min.js" as="script">
     <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="css/style.min.css">
+
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -111,19 +112,19 @@
             <legend class="form-fieldset__title">Дополнительно</legend>
             <ul class="form-list form-list--details">
               <li class="form-list__item form-list__item--checkbox">
-                <input type="checkbox" id="sugar-checkbox" checked>
+                <input type="checkbox" id="sugar-checkbox" name="sugar" checked>
                 <label for="sugar-checkbox">Сахарозаменитель</label>
               </li>
               <li class="form-list__item form-list__item--checkbox">
-                <input type="checkbox" id="water-checkbox">
+                <input type="checkbox" id="water-checkbox" name="water">
                 <label for="water-checkbox">Питьевая вода</label>
               </li>
               <li class="form-list__item form-list__item--checkbox">
-                <input type="checkbox" id="milk-checkbox">
+                <input type="checkbox" id="milk-checkbox" name="milk">
                 <label for="milk-checkbox">Молоко</label>
               </li>
               <li class="form-list__item form-list__item--checkbox">
-                <input type="checkbox" id="vitamin-checkbox">
+                <input type="checkbox" id="vitamin-checkbox" name="vitamins">
                 <label for="vitamin-checkbox">Витамины</label>
               </li>
             </ul>
