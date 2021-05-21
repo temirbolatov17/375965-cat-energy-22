@@ -121,7 +121,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     width: 100%;
-    margin-top: 160px;
+    margin-top: 163px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,13 +139,14 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 147px;
-      margin-left: 4px;
+      margin-top: 144px;
+      margin-left: 0;
       margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       margin-left: 0;
+      margin-top: 150px;
     }
   }
 }
@@ -153,12 +154,16 @@
 .product__subtitle {
   @include arial(12px, 20px, 400);
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 62px;
 
   @media (min-width: $tablet-width) {
     @include arial(16px, 18px, 400);
     width: 170px;
     margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
   }
 }
