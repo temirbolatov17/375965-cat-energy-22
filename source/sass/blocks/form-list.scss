@@ -47,7 +47,7 @@
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 70px;
+      column-gap: 75px;
       margin-bottom: 47px;
     }
   }
@@ -103,10 +103,14 @@
   & label {
     align-self: center;
     flex: 0 0 auto;
-    margin-right: 9px;
+    margin-right: 12px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 16px;
+      margin-right: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 19px;
     }
   }
 
@@ -134,18 +138,18 @@
       border: 2px solid $dark-grey;
     }
 
-    &:focus:invalid {
-      outline: none;
-      border: 2px solid $red-error;
-    }
-
     @include oswald-uppercase(16px, 18px, 400);
     color: $dark-grey;
 
     @media (min-width: $tablet-width) {
-      padding-left: 20px;
+      padding-left: 18px;
       height: 52px;
       box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 18px;
+      padding-top: 13px;
     }
   }
 
@@ -259,20 +263,15 @@
       border: 2px solid $dark-grey;
     }
 
-    &:focus:valid {
-      outline: none;
-      border: 2px solid $basic-green;
-    }
-
-    &:focus:invalid {
-      outline: none;
-      border: 2px solid $red-error;
-    }
-
     @media (min-width: $tablet-width) {
       padding-left: 20px;
       height: 52px;
       box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 18px;
+      padding-top: 13px;
     }
   }
 
@@ -299,12 +298,7 @@
       }
     }
 
-    &:focus:valid {
-      outline: none;
-      border: 2px solid $dark-grey;
-    }
-
-    &:focus:invalid {
+    &:invalid:not(:placeholder-shown) {
       outline: none;
       border: 2px solid $red-error;
 
@@ -317,6 +311,10 @@
       padding-left: 23px;
       height: 52px;
       box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 20px;
     }
   }
 
@@ -348,7 +346,7 @@
       border: 2px solid $dark-grey;
     }
 
-    &:focus:invalid {
+    &:invalid:not(:placeholder-shown) {
       outline: none;
       border: 2px solid $red-error;
 
@@ -361,6 +359,10 @@
       padding-left: 17px;
       height: 52px;
       box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
     }
   }
 
@@ -441,5 +443,16 @@
 
   &--checkbox input[type="checkbox"]:disabled + label {
     opacity: 0.3;
+  }
+}
+
+.form-list__input {
+  &--error {
+    outline: none;
+    box-shadow: 0 0 0 2px $red-error;
+
+    & + svg {
+      fill: $red-error;
+    }
   }
 }

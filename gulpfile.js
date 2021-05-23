@@ -7,7 +7,6 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -43,19 +42,6 @@ const html = () => {
     .pipe(htmlmin({ collapseWhitespace: false }))
     .pipe(gulp.dest("build"));
 }
-
-// Scripts
-
-const scripts = () => {
-  return gulp.src("source/js/script.js")
-    .pipe(gulp.dest("build/js"))
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
-}
-
-exports.scripts = scripts;
 
 // Images
 
@@ -152,7 +138,6 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -165,7 +150,6 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     sprite,
     createWebp
   ),
@@ -182,7 +166,6 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     sprite,
     createWebp
   ),

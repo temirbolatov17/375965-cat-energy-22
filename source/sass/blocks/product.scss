@@ -133,6 +133,7 @@
     width: 100%;
     text-align: center;
     margin-top: 19px;
+    margin-bottom: 5px;
 
     & h3 {
       margin: 0;
@@ -155,7 +156,7 @@
   @include arial(12px, 20px, 400);
   text-align: center;
   margin-top: 0;
-  margin-bottom: 62px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     @include arial(16px, 18px, 400);

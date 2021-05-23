@@ -57,15 +57,15 @@
             <ul class="form-list form-list--info">
               <li class="form-list__item">
                 <label for="name">Имя:*</label>
-                <input type="text" id="name" name="name" placeholder="Барсик" required>
+                <input class="form-list__input" type="text" id="name" name="name" placeholder="Барсик" required> <!-- form-list__input--error модификатор ошибки -->
               </li>
               <li class="form-list__item">
                 <label for="weight">Вес (кг):*</label>
-                <input type="number" min="1" max="50" id="weight" name="weight" placeholder="7" required>
+                <input class="form-list__input" type="number" min="1" max="50" id="weight" name="weight" placeholder="7" required> <!-- form-list__input--error модификатор ошибки -->
               </li>
               <li class="form-list__item">
                 <label for="age">Возраст (лет):</label>
-                <input type="number" min="1" max="25" id="age" name="age" placeholder="7">
+                <input class="form-list__input" type="number" min="1" max="25" id="age" name="age" placeholder="7"> <!-- form-list__input--error модификатор ошибки -->
               </li>
             </ul>
             <div class="form-divider"></div>
@@ -90,15 +90,15 @@
             <ul class="form-list form-list--contacts">
               <li class="form-list__item form-list__item--contacts">
                 <label for="e-mail">E-mail:*</label>
-                <input type="email" id="e-mail" placeholder="kuklachev@gmail.com" name="e-mail" required>
+                <input class="form-list__input" type="email" id="e-mail" placeholder="kuklachev@gmail.com" name="e-mail" required> <!-- form-list__input--error модификатор ошибки -->
                 <svg width="19" height="14">
                   <use href="img/sprite.svg#icon-email"></use>
                 </svg>
               </li>
               <li class="form-list__item form-list__item--contacts">
                 <label for="telephone">Телефон:*</label>
-                <input type="tel" id="telephone" placeholder="8 (960) 900-60-90" name="telephone" required>
-                <svg width="20" height="20">
+                <input class="form-list__input" type="tel" id="telephone" placeholder="8 (960) 900-60-90" name="telephone" required>  <!-- form-list__input--error модификатор ошибки -->
+                <svg width="19" height="18">
                   <use href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </li>
