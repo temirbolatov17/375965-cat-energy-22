@@ -38,7 +38,7 @@
 
         @media (min-width: $desktop-width) {
           background-color: $white;
-          bottom: -5px;
+          bottom: -7px;
         }
       }
     }
@@ -56,6 +56,10 @@
         left: 0;
         height: 2px;
         background: $basic-green;
+
+        @media (min-width: $desktop-width) {
+          bottom: -7px;
+        }
       }
     }
   }
