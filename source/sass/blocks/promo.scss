@@ -2,6 +2,7 @@
 
 .promo {
   background-image: url("../img/promo-img/gift-photo-mobile.png");
+  background-color: rgba($basic-green, 0.85);
   background-repeat: no-repeat;
   background-size: 280px 289px;
   width: 280px;
@@ -18,6 +19,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo-img/gift-photo-tablet.png");
+    background-color: rgba($basic-green, 0.85);
     background-size: 708px 200px;
     width: 708px;
     min-height: 200px;
@@ -32,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/promo-img/gift-photo-desktop.png");
+    background-color: rgba($basic-green, 0.85);
     background-size: 245px 289px;
     width: 245px;
     flex-direction: column;

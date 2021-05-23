@@ -7,6 +7,16 @@
   @media (min-width: $tablet-width) {
     @include oswald-uppercase(20px, 30px, 400);
     border-bottom: 1px dotted rgba($black, 0.24);
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border-bottom: 1px solid rgba($black, 0.24);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   &--before {
