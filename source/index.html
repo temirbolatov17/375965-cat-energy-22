@@ -33,7 +33,7 @@
         <a class="page-header__logo page-header__logo--middle" href="index.html">
           <img src="img/logo/logo-middle-mobile.svg" width="101" height="18" alt="Cat Energy">
         </a>
-        <nav class="main-nav main-nav--opened"> <!-- closed закрывает навигацию -->
+        <nav class="main-nav main-nav--closed main-nav--nojs"> <!-- opened открывает навигацию, nojs убирает крестик для работы без js -->
           <ul class="main-nav__list site-list site-list--hidden">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--index-active site-list__link--index" href="index.html">Главная</a>
@@ -139,7 +139,8 @@
           <div class="slider__control">
             <button class="slider-button slider-button--before" type="button">Было</button>
             <div class="range-control">
-              <input class="range" type="range" min="0" max="100" value="50">
+              <input class="range" type="range" id="slider-range" min="0" max="100" value="50">
+              <label class="visually-hidden" for="slider-range">Ползунок просмотра разницы</label>
             </div>
             <div class="toggle-control">
               <button class="toggle-control__button toggle-control__button--before" type="button"></button>
@@ -204,5 +205,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

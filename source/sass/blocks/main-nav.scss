@@ -5,7 +5,9 @@
   grid-row: 2 / -1;
 
   &--closed {
-    display: none;
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -30,6 +32,12 @@
     height: 2px;
     background-color: $black;
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  }
+}
+
+.main-nav--nojs + .page-header__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
