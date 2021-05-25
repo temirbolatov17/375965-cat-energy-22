@@ -10,6 +10,12 @@
     }
   }
 
+  &--nojs {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-row: 1 / -1;
     grid-column: 2 / -1;
