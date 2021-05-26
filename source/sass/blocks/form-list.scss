@@ -176,7 +176,6 @@
   }
 
   &--radio input[type="radio"] {
-    display: none;
 
     &:checked + label::after {
       content: "";
@@ -389,7 +388,6 @@
   }
 
   &--checkbox input[type="checkbox"] {
-    display: none;
 
     &:checked + label::after {
       content: url("../img/form-img/checkbox-tick.svg");
