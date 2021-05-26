@@ -176,7 +176,6 @@
   }
 
   &--radio input[type="radio"] {
-
     &:checked + label::after {
       content: "";
       display: block;
